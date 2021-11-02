@@ -1,4 +1,4 @@
-class Shot < ApplicationRecord 
+class Shot < ApplicationRecord  
     mount_uploader :user_shot, UserShotUploader
-    belongs_to :user 
+    belongs_to :user
 end

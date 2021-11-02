@@ -1,4 +1,4 @@
-require "test_helper"
+require 'test_helper'
 
 class ShotTest < ActiveSupport::TestCase
   # test "the truth" do

@@ -1,1865 +1,851 @@
-Started GET "/" for ::1 at 2021-10-30 18:14:13 +0200
-
-ActiveRecord::ConnectionNotEstablished - could not connect to server: No such file or directory
-	Is the server running locally and accepting
-	connections on Unix domain socket "/var/run/postgresql/.s.PGSQL.5432"?:
-
-Started POST "/__better_errors/f381cd5502f9f9c0/variables" for ::1 at 2021-10-30 18:14:14 +0200
-Started GET "/" for ::1 at 2021-10-30 18:16:28 +0200
-
-ActiveRecord::NoDatabaseError - FATAL:  database "dribbble_development" does not exist:
-
-Started POST "/__better_errors/816fe85644bf5a7b/variables" for ::1 at 2021-10-30 18:16:29 +0200
-  [1m[35m (2133.2ms)[0m  [1m[35mCREATE DATABASE "dribbble_development" ENCODING = 'unicode'[0m
-  [1m[35m (1930.0ms)[0m  [1m[35mCREATE DATABASE "dribbble_test" ENCODING = 'unicode'[0m
-Started GET "/" for ::1 at 2021-10-30 18:18:07 +0200
+Started GET "/" for ::1 at 2021-11-02 07:34:17 +0200
 Processing by Rails::WelcomeController#index as HTML
-  Rendering /home/elarabyelaidy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
-  Rendered /home/elarabyelaidy/.rvm/gems/ruby-3.0.0/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 68.7ms | Allocations: 459)
-Completed 200 OK in 351ms (Views: 167.4ms | ActiveRecord: 0.0ms | Allocations: 4236)
+  Rendering /home/elarabyelaidy/.rvm/gems/ruby-2.5.1/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/elarabyelaidy/.rvm/gems/ruby-2.5.1/gems/railties-5.1.7/lib/rails/templates/rails/welcome/index.html.erb (30.3ms)
+Completed 200 OK in 162ms (Views: 136.0ms)
 
 
-Started GET "/" for ::1 at 2021-10-30 18:31:09 +0200
-Processing by HomeController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 77)
-[Webpacker] Compiling...
-Started GET "/" for ::1 at 2021-10-30 18:31:45 +0200
-[Webpacker] Compilation failed:
-
-  Rendered layout layouts/application.html.erb (Duration: 47978.3ms | Allocations: 98966)
-Completed 500 Internal Server Error in 48002ms (Allocations: 100302)
-
-
-
-Webpacker::Manifest::MissingEntryError - Webpacker can't find application.js in /mnt/f/github/dribbble/public/packs/manifest.json. Possible causes:
-1. You want to set webpacker.yml value of compile to true for your environment
-   unless you are using the `webpack -w` or the webpack-dev-server.
-2. webpack has not yet re-run to reflect updates.
-3. You have misconfigured Webpacker's config/webpacker.yml file.
-4. Your webpack configuration is not creating a manifest.
-Your manifest contains:
-{
-}:
-  app/views/layouts/application.html.erb:10
-
-Processing by HomeController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 6)
-[Webpacker] Compiling...
-[Webpacker] Compilation failed:
-
-  Rendered layout layouts/application.html.erb (Duration: 3158.1ms | Allocations: 8952)
-Completed 500 Internal Server Error in 3162ms (Allocations: 9516)
-
-
-
-Webpacker::Manifest::MissingEntryError - Webpacker can't find application.js in /mnt/f/github/dribbble/public/packs/manifest.json. Possible causes:
-1. You want to set webpacker.yml value of compile to true for your environment
-   unless you are using the `webpack -w` or the webpack-dev-server.
-2. webpack has not yet re-run to reflect updates.
-3. You have misconfigured Webpacker's config/webpacker.yml file.
-4. Your webpack configuration is not creating a manifest.
-Your manifest contains:
-{
-}:
-  app/views/layouts/application.html.erb:10
-
-Started GET "/" for ::1 at 2021-10-30 18:32:28 +0200
-Processing by HomeController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 237)
-[Webpacker] Compiling...
-[Webpacker] Compiled all packs in /mnt/f/github/dribbble/public/packs
-[Webpacker] Hash: e2a8a876c5815bee1e21
-Version: webpack 4.46.0
-Time: 28459ms
-Built at: 10/30/2021 6:33:15 PM
-                                     Asset       Size       Chunks                         Chunk Names
-    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
-js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
-                             manifest.json  364 bytes               [emitted]              
-Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
-[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
-[./app/javascript/channels/index.js] 211 bytes {application} [built]
-[./app/javascript/packs/application.js] 492 bytes {application} [built]
-[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
-    + 3 hidden modules
-
-  Rendered layout layouts/application.html.erb (Duration: 46462.6ms | Allocations: 17218)
-Completed 200 OK in 46746ms (Views: 46646.6ms | ActiveRecord: 0.0ms | Allocations: 20425)
-
-
-Started GET "/" for ::1 at 2021-10-30 18:33:20 +0200
-Processing by HomeController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering home/index.html.erb within layouts/application
-  Rendered home/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 6)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 217.5ms | Allocations: 7176)
-Completed 200 OK in 222ms (Views: 220.6ms | ActiveRecord: 0.0ms | Allocations: 7857)
-
-
-  [1m[35m (218.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
-  [1m[35m (307.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
-  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7657400728614422310)[0m
-  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to DeviseCreateUsers (20211030163544)
-  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (221.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
-  [1m[35m (65.0ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
-  [1m[35m (70.5ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
-  [1m[36mActiveRecord::SchemaMigration Create (1.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211030163544"]]
-  [1m[36mTRANSACTION (61.5ms)[0m  [1m[35mCOMMIT[0m
-  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mActiveRecord::InternalMetadata Create (0.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-10-30 16:37:05.543113"], ["updated_at", "2021-10-30 16:37:05.543113"]]
-  [1m[36mTRANSACTION (89.5ms)[0m  [1m[35mCOMMIT[0m
-  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(7657400728614422310)[0m
-  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7657400728614422310)[0m
-  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to AddFieldToUser (20211030164750)
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "users" ADD "name" character varying[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211030164750"]]
-  [1m[36mTRANSACTION (35.7ms)[0m  [1m[35mCOMMIT[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(7657400728614422310)[0m
-  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7657400728614422310)[0m
-  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to CreateShots (20211030170546)
-  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (185.5ms)[0m  [1m[35mCREATE TABLE "shots" ("id" bigserial primary key, "title" character varying, "description" text, "user_id" integer, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
-  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211030170546"]]
-  [1m[36mTRANSACTION (29.7ms)[0m  [1m[35mCOMMIT[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[35m (0.9ms)[0m  [1m[34mSELECT pg_advisory_unlock(7657400728614422310)[0m
-  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started GET "/" for ::1 at 2021-10-30 19:08:49 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (131.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (90.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
   [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (2.7ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:16
-  Rendered shots/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 1222)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 9380.8ms | Allocations: 85235)
-Completed 200 OK in 9460ms (Views: 9395.6ms | ActiveRecord: 2.7ms | Allocations: 86948)
-
-
-Started GET "/shots/new" for ::1 at 2021-10-30 19:09:06 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 1967.1ms | Allocations: 25568)
-  Rendered shots/new.html.erb within layouts/application (Duration: 1979.9ms | Allocations: 25937)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 2175.4ms | Allocations: 33055)
-Completed 200 OK in 2200ms (Views: 2177.0ms | ActiveRecord: 6.0ms | Allocations: 37216)
-
-
-Started GET "/shots/new" for ::1 at 2021-10-30 19:17:42 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 38.1ms | Allocations: 6559)
-  Rendered shots/new.html.erb within layouts/application (Duration: 54.1ms | Allocations: 6915)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 309.6ms | Allocations: 14924)
-Completed 200 OK in 384ms (Views: 327.5ms | ActiveRecord: 14.8ms | Allocations: 22162)
-
-
-Started GET "/shots/new" for ::1 at 2021-10-30 19:28:31 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 20.2ms | Allocations: 6337)
-  Rendered shots/new.html.erb within layouts/application (Duration: 39.4ms | Allocations: 6690)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 7647.8ms | Allocations: 88976)
-Completed 200 OK in 7679ms (Views: 7666.0ms | Allocations: 90309)
-
-
-Started GET "/" for ::1 at 2021-10-30 19:28:45 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.4ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 59.6ms | Allocations: 4481)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 265.2ms | Allocations: 11875)
-Completed 200 OK in 280ms (Views: 266.7ms | ActiveRecord: 18.1ms | Allocations: 12539)
-
-
-Started GET "/shots/new" for ::1 at 2021-10-30 19:28:48 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 11.4ms | Allocations: 6121)
-  Rendered shots/new.html.erb within layouts/application (Duration: 12.5ms | Allocations: 6231)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 229.4ms | Allocations: 13508)
-Completed 200 OK in 233ms (Views: 230.9ms | ActiveRecord: 0.0ms | Allocations: 13994)
-
-
-Started GET "/users/sign_in" for ::1 at 2021-10-30 19:28:51 +0200
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 105.2ms | Allocations: 4635)
-  Rendered layout layouts/application.html.erb (Duration: 110.8ms | Allocations: 4738)
-Completed 500 Internal Server Error in 302ms (ActiveRecord: 14.3ms | Allocations: 11805)
-
-
-
-NoMethodError - undefined method `session_path' for #<ActionView::Base:0x0000000000d778>
-Did you mean?  session:
-  app/views/devise/sessions/new.html.erb:6
-
-Started POST "/__better_errors/cbb6ea8eb600575f/variables" for ::1 at 2021-10-30 19:28:52 +0200
-Started GET "/users/sign_in" for ::1 at 2021-10-30 19:34:59 +0200
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 60.7ms | Allocations: 4314)
-  Rendered layout layouts/application.html.erb (Duration: 65.2ms | Allocations: 4417)
-Completed 500 Internal Server Error in 123ms (Allocations: 6256)
-
-
-
-NoMethodError - undefined method `session_path' for #<ActionView::Base:0x0000000000d890>
-Did you mean?  session:
-  app/views/devise/sessions/new.html.erb:6
-
-Started POST "/__better_errors/44cc23400c4b31c5/variables" for ::1 at 2021-10-30 19:35:00 +0200
-Started GET "/shots/new" for ::1 at 2021-10-30 19:46:42 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 21.7ms | Allocations: 6337)
-  Rendered shots/new.html.erb within layouts/application (Duration: 44.4ms | Allocations: 6690)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 347.2ms | Allocations: 14485)
-Completed 200 OK in 382ms (Views: 367.9ms | Allocations: 15827)
-
-
-Started GET "/users/sign_in" for ::1 at 2021-10-30 19:46:47 +0200
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.6ms | Allocations: 4286)
-  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 4389)
-Completed 500 Internal Server Error in 71ms (ActiveRecord: 11.3ms | Allocations: 12975)
-
-
-
-NoMethodError - undefined method `session_path' for #<ActionView::Base:0x0000000000f1b8>
-Did you mean?  session:
-  app/views/devise/sessions/new.html.erb:6
-
-Started POST "/__better_errors/6ac4ca3d69afedeb/variables" for ::1 at 2021-10-30 19:46:47 +0200
-Started GET "/users/sign_in" for ::1 at 2021-10-30 19:47:36 +0200
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 13.1ms | Allocations: 4083)
-  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 4185)
-Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 4828)
-
-
-
-NoMethodError - undefined method `session_path' for #<ActionView::Base:0x0000000000f280>
-Did you mean?  session:
-  app/views/devise/sessions/new.html.erb:6
-
-Started POST "/__better_errors/ea961bb2079a6a98/variables" for ::1 at 2021-10-30 19:47:37 +0200
-  [1m[35m (1.1ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7657400728614422310)[0m
+Migrating to DeviseCreateUsers (20211102071631)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (6.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211102071631"]]
+  [1m[35m (104.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (2.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.7ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-11-02 07:28:11.031228"], ["updated_at", "2021-11-02 07:28:11.031228"]]
+  [1m[35m (89.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.5ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (1.6ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddFieldsToUser (20211102072822)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (8.4ms)[0m  [1m[35mALTER TABLE "users" ADD "name" varchar[0m
+  [1m[35mSQL (2.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211102072822"]]
+  [1m[35m (105.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.0ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (1.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
   [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[35m (1.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(7657400728614422310)[0m
-  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started GET "/users/sign_in" for ::1 at 2021-10-30 19:48:08 +0200
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 14.0ms | Allocations: 4053)
-  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 4156)
-Completed 500 Internal Server Error in 43ms (ActiveRecord: 9.7ms | Allocations: 9855)
+Migrating to CreateShots (20211102073153)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (7.7ms)[0m  [1m[35mCREATE TABLE "shots" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "description" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (3.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211102073153"]]
+  [1m[35m (155.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (3.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (1.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.4ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (1.5ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/" for ::1 at 2021-11-02 09:39:13 +0200
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (21.1ms)
+Started GET "/" for ::1 at 2021-11-02 09:39:16 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 9076ms (Views: 8984.6ms | ActiveRecord: 0.0ms)
 
 
-
-NoMethodError - undefined method `session_path' for #<ActionView::Base:0x00000000010a40>
-Did you mean?  session:
-  app/views/devise/sessions/new.html.erb:6
-
-Started POST "/__better_errors/200f27203ed602b4/variables" for ::1 at 2021-10-30 19:48:09 +0200
-Started GET "/users/sign_in" for ::1 at 2021-10-30 19:50:19 +0200
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 17.6ms | Allocations: 4053)
-  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 4156)
-Completed 500 Internal Server Error in 52ms (ActiveRecord: 11.4ms | Allocations: 9677)
+Completed 200 OK in 12570ms (Views: 12462.0ms | ActiveRecord: 0.0ms)
 
 
-
-NoMethodError - undefined method `session_path' for #<ActionView::Base:0x000000000122a0>
-Did you mean?  session:
-  app/views/devise/sessions/new.html.erb:6
-
-Started POST "/__better_errors/eda93807b8cc53ca/variables" for ::1 at 2021-10-30 19:50:20 +0200
-Started GET "/users/sign_in" for ::1 at 2021-10-30 19:51:27 +0200
-  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 64.0ms | Allocations: 602)
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 581.0ms | Allocations: 18932)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 3362.8ms | Allocations: 41301)
-Completed 200 OK in 3491ms (Views: 3422.6ms | ActiveRecord: 11.2ms | Allocations: 50366)
+Started GET "/" for ::1 at 2021-11-02 09:39:26 +0200
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 665ms (Views: 578.1ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for ::1 at 2021-10-30 19:51:36 +0200
+Started GET "/" for ::1 at 2021-11-02 09:41:11 +0200
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
   [1m[36mShot Load (2.6ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 1315)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 210.7ms | Allocations: 8718)
-Completed 200 OK in 281ms (Views: 216.1ms | ActiveRecord: 2.6ms | Allocations: 10426)
+  Rendered shots/index.html.erb within layouts/application (31.5ms)
+Completed 200 OK in 2513ms (Views: 2357.8ms | ActiveRecord: 7.4ms)
 
 
-Started GET "/" for ::1 at 2021-10-30 19:51:38 +0200
+Started GET "/shots/new" for ::1 at 2021-11-02 09:41:16 +0200
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (841.9ms)
+  Rendered shots/new.html.erb within layouts/application (921.8ms)
+Completed 200 OK in 1616ms (Views: 1484.6ms | ActiveRecord: 11.6ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 09:49:54 +0200
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (856.0ms)
+  Rendered shots/new.html.erb within layouts/application (938.0ms)
+Completed 200 OK in 9169ms (Views: 9029.5ms | ActiveRecord: 9.1ms)
+
+
+Started GET "/" for ::1 at 2021-11-02 09:50:10 +0200
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.4ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 885)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 182.7ms | Allocations: 8206)
-Completed 200 OK in 187ms (Views: 183.5ms | ActiveRecord: 1.4ms | Allocations: 8696)
+  [1m[36mShot Load (2.7ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
+  Rendered shots/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 648ms (Views: 569.1ms | ActiveRecord: 2.7ms)
 
 
-Started GET "/users/sign_in" for ::1 at 2021-10-30 19:51:40 +0200
+Started GET "/users/sign_up" for ::1 at 2021-11-02 09:50:26 +0200
+
+ActionController::RoutingError - uninitialized constant RegistrationsController:
+
+Started POST "/__better_errors/e4f36f262be0ac6c/variables" for ::1 at 2021-11-02 09:50:26 +0200
+Started GET "/" for ::1 at 2021-11-02 09:51:44 +0200
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (1.9ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
+  Rendered shots/index.html.erb within layouts/application (22.5ms)
+Completed 200 OK in 2347ms (Views: 2214.9ms | ActiveRecord: 4.9ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-11-02 09:51:50 +0200
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (1041.1ms)
+Completed 200 OK in 1856ms (Views: 1829.1ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-02 09:51:55 +0200
 Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
   Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 119)
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 18.4ms | Allocations: 8479)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 265.7ms | Allocations: 15680)
-Completed 200 OK in 271ms (Views: 268.6ms | ActiveRecord: 0.0ms | Allocations: 16379)
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (193.3ms)
+Completed 200 OK in 876ms (Views: 862.2ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/users/sign_up" for ::1 at 2021-10-30 19:51:42 +0200
-
-ActionController::RoutingError - uninitialized constant RegistrationsController:
-
-Started POST "/__better_errors/ac73898d4017286f/variables" for ::1 at 2021-10-30 19:51:42 +0200
-Started GET "/users/sign_up" for ::1 at 2021-10-30 19:52:34 +0200
-
-ActionController::RoutingError - uninitialized constant RegistrationsController:
-
-Started POST "/__better_errors/7135c7537a2e09be/variables" for ::1 at 2021-10-30 19:52:34 +0200
-Started GET "/" for ::1 at 2021-10-30 19:52:42 +0200
+Started GET "/" for ::1 at 2021-11-02 09:51:59 +0200
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.2ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 885)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 253.7ms | Allocations: 8335)
-Completed 200 OK in 258ms (Views: 254.4ms | ActiveRecord: 1.2ms | Allocations: 8822)
-
-
-Started GET "/users/sign_up" for ::1 at 2021-10-30 19:52:45 +0200
-
-ActionController::RoutingError - uninitialized constant RegistrationsController:
-
-Started POST "/__better_errors/f55be3baa6fd85e5/variables" for ::1 at 2021-10-30 19:52:45 +0200
-Started GET "/users/sign_up" for ::1 at 2021-10-30 19:54:08 +0200
-
-ActionController::RoutingError - uninitialized constant RegistrationsController:
-
-Started POST "/__better_errors/f6eac0892f362d76/variables" for ::1 at 2021-10-30 19:54:09 +0200
-Started GET "/users" for ::1 at 2021-10-30 19:54:14 +0200
-  
-ActionController::RoutingError (No route matches [GET] "/users"):
-  
-Started GET "/" for ::1 at 2021-10-30 19:54:19 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.3ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 877)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 232.9ms | Allocations: 8319)
-Completed 200 OK in 237ms (Views: 234.1ms | ActiveRecord: 1.3ms | Allocations: 8799)
-
-
-Started GET "/" for ::1 at 2021-10-30 19:54:20 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 878)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 209.1ms | Allocations: 8197)
-Completed 200 OK in 212ms (Views: 209.6ms | ActiveRecord: 1.1ms | Allocations: 8674)
-
-
-Started GET "/users/sign_in" for ::1 at 2021-10-30 19:54:22 +0200
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 119)
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 35.2ms | Allocations: 8499)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 272.8ms | Allocations: 15821)
-Completed 200 OK in 277ms (Views: 274.6ms | ActiveRecord: 0.0ms | Allocations: 16509)
-
-
-Started GET "/users/sign_up" for ::1 at 2021-10-30 19:54:24 +0200
-
-ActionController::RoutingError - uninitialized constant RegistrationsController:
-
-Started POST "/__better_errors/6b0986f767bc0454/variables" for ::1 at 2021-10-30 19:54:25 +0200
-Started GET "/users/sign_up" for ::1 at 2021-10-30 19:54:44 +0200
-  [1m[35m (1.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-
-ActionController::RoutingError - uninitialized constant RegistrationsController
-Did you mean?  RegestrationsController:
-
-Started POST "/__better_errors/e4f86c585710146e/variables" for ::1 at 2021-10-30 19:54:45 +0200
-Started GET "/" for ::1 at 2021-10-30 19:57:10 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
   [1m[36mShot Load (1.7ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 1560)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 1845.9ms | Allocations: 18008)
-Completed 200 OK in 1951ms (Views: 1871.1ms | ActiveRecord: 1.7ms | Allocations: 21842)
+  Rendered shots/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 620ms (Views: 538.7ms | ActiveRecord: 1.7ms)
 
 
-Started GET "/users/sign_up" for ::1 at 2021-10-30 19:57:16 +0200
-
-ActionController::RoutingError - uninitialized constant RegistrationsController
-Did you mean?  RegestrationsController:
-
-Started POST "/__better_errors/748c6280e63df47d/variables" for ::1 at 2021-10-30 19:57:17 +0200
-Started GET "/" for ::1 at 2021-10-30 19:57:47 +0200
-  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-11-02 09:52:00 +0200
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (2.8ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 22.9ms | Allocations: 1388)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 2037.7ms | Allocations: 17901)
-Completed 200 OK in 2173ms (Views: 2073.2ms | ActiveRecord: 2.8ms | Allocations: 21736)
-
-
-Started GET "/users/sign_up" for ::1 at 2021-10-30 19:57:52 +0200
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 6.4ms | Allocations: 514)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 379.5ms | Allocations: 18989)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 631.8ms | Allocations: 26273)
-Completed 200 OK in 682ms (Views: 659.2ms | ActiveRecord: 8.8ms | Allocations: 32979)
-
-
-Started GET "/users/sign_in" for ::1 at 2021-10-30 19:58:18 +0200
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 201)
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 51.9ms | Allocations: 9312)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 244.7ms | Allocations: 16605)
-Completed 200 OK in 308ms (Views: 266.0ms | ActiveRecord: 11.6ms | Allocations: 22830)
-
-
-Started GET "/users/password/new" for ::1 at 2021-10-30 19:58:21 +0200
-Processing by Devise::PasswordsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/passwords/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 136)
-  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 40.8ms | Allocations: 3601)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 259.8ms | Allocations: 11000)
-Completed 200 OK in 284ms (Views: 265.5ms | ActiveRecord: 0.0ms | Allocations: 12334)
-
-
-Started GET "/users/sign_up" for ::1 at 2021-10-30 19:58:23 +0200
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 87)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 27.3ms | Allocations: 9257)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 226.7ms | Allocations: 16661)
-Completed 200 OK in 233ms (Views: 230.2ms | ActiveRecord: 0.0ms | Allocations: 17560)
-
-
-Started POST "/users" for ::1 at 2021-10-30 19:58:26 +0200
-Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-[31mUnpermitted parameter: :name[0m
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 72)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 30.0ms | Allocations: 10758)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 227.9ms | Allocations: 17964)
-Completed 200 OK in 259ms (Views: 229.5ms | ActiveRecord: 0.0ms | Allocations: 21807)
-
-
-Started GET "/users/sign_in" for ::1 at 2021-10-30 19:58:29 +0200
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 119)
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 33.1ms | Allocations: 8480)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 287.4ms | Allocations: 15683)
-Completed 200 OK in 292ms (Views: 289.9ms | ActiveRecord: 0.0ms | Allocations: 16368)
-
-
-Started GET "/users/password/new" for ::1 at 2021-10-30 19:58:31 +0200
-Processing by Devise::PasswordsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/passwords/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 117)
-  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 3320)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 217.8ms | Allocations: 10508)
-Completed 200 OK in 223ms (Views: 220.9ms | ActiveRecord: 0.0ms | Allocations: 11092)
-
-
-Started POST "/users/password" for ::1 at 2021-10-30 19:58:33 +0200
-Processing by Devise::PasswordsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>""}, "commit"=>"Send me reset password instructions"}
-  Rendering layout layouts/application.html.erb
-  Rendering devise/passwords/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 117)
-  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 10.7ms | Allocations: 4060)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 245.9ms | Allocations: 11270)
-Completed 200 OK in 296ms (Views: 247.9ms | ActiveRecord: 0.0ms | Allocations: 13131)
-
-
-Started GET "/users/password" for ::1 at 2021-10-30 20:01:05 +0200
-  
-ActionController::RoutingError (No route matches [GET] "/users/password"):
-  
-Started GET "/users" for ::1 at 2021-10-30 20:01:12 +0200
-  
-ActionController::RoutingError (No route matches [GET] "/users"):
-  
-Started GET "/" for ::1 at 2021-10-30 20:01:15 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.6ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 956)
-Started GET "/" for ::1 at 2021-10-30 20:01:19 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (3.7ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 48.8ms | Allocations: 5082)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 11946.9ms | Allocations: 124695)
-Completed 200 OK in 11963ms (Views: 11949.3ms | ActiveRecord: 1.6ms | Allocations: 125859)
-
-
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 7761.6ms | Allocations: 86853)
-Completed 200 OK in 7766ms (Views: 7734.4ms | ActiveRecord: 29.8ms | Allocations: 87333)
-
-
-Started GET "/users/sign_in" for ::1 at 2021-10-30 20:01:30 +0200
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 119)
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 22.1ms | Allocations: 8503)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 270.5ms | Allocations: 15717)
-Completed 200 OK in 276ms (Views: 272.8ms | ActiveRecord: 0.0ms | Allocations: 16405)
-
-
-Started GET "/users/sign_up" for ::1 at 2021-10-30 20:01:32 +0200
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 72)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 20.6ms | Allocations: 9116)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 219.0ms | Allocations: 16431)
-Completed 200 OK in 223ms (Views: 221.2ms | ActiveRecord: 0.0ms | Allocations: 17067)
-
-
-Started GET "/users/sign_in" for ::1 at 2021-10-30 20:01:37 +0200
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 119)
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 27.4ms | Allocations: 8495)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 260.3ms | Allocations: 15689)
-Completed 200 OK in 265ms (Views: 262.3ms | ActiveRecord: 0.0ms | Allocations: 16373)
-
-
-Started GET "/users/password/new" for ::1 at 2021-10-30 20:01:38 +0200
-Processing by Devise::PasswordsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/passwords/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 117)
-  Rendered devise/passwords/new.html.erb within layouts/application (Duration: 8.1ms | Allocations: 3326)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 252.4ms | Allocations: 10509)
-Completed 200 OK in 257ms (Views: 254.3ms | ActiveRecord: 0.0ms | Allocations: 11094)
-
-
-Started GET "/users/sign_up" for ::1 at 2021-10-30 20:05:36 +0200
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 72)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 36.8ms | Allocations: 9102)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 437.8ms | Allocations: 16297)
-Completed 200 OK in 445ms (Views: 441.3ms | ActiveRecord: 0.0ms | Allocations: 16915)
-
-
-Started POST "/users" for ::1 at 2021-10-30 20:06:03 +0200
-Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elaraby Elaidy", "email"=>"eeee@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-[31mUnpermitted parameter: :name[0m
-  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists? (5.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "eeee@gmail.com"], ["LIMIT", 1]]
-  [1m[36mUser Create (26.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "eeee@gmail.com"], ["encrypted_password", "$2a$12$ocsImcP14MOdKEC9TZGaLO/zObdR.sqf5dfcDzkWXWKYjrzSR9hEq"], ["created_at", "2021-10-30 18:06:03.808463"], ["updated_at", "2021-10-30 18:06:03.808463"]]
-  [1m[36mTRANSACTION (28.5ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/
-Completed 302 Found in 704ms (ActiveRecord: 62.2ms | Allocations: 10054)
-
-
-Started GET "/" for ::1 at 2021-10-30 20:06:04 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (3.6ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 877)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 268.4ms | Allocations: 9506)
-Completed 200 OK in 272ms (Views: 262.6ms | ActiveRecord: 7.8ms | Allocations: 9995)
-
-
-Started GET "/" for ::1 at 2021-10-30 20:11:35 +0200
-  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (2.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 19.5ms | Allocations: 1388)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 2811.0ms | Allocations: 30495)
-Completed 200 OK in 2919ms (Views: 2835.8ms | ActiveRecord: 11.6ms | Allocations: 34333)
-
-
-Started GET "/" for ::1 at 2021-10-30 20:11:39 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
   [1m[36mShot Load (2.5ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 886)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 211.2ms | Allocations: 9067)
-Completed 200 OK in 215ms (Views: 209.1ms | ActiveRecord: 4.0ms | Allocations: 9559)
+  Rendered shots/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 625ms (Views: 555.0ms | ActiveRecord: 2.5ms)
 
 
-Started DELETE "/users/sign_out" for ::1 at 2021-10-30 20:11:43 +0200
-Processing by Devise::SessionsController#destroy as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]"}
-  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
-Redirected to http://localhost:3000/
-Completed 302 Found in 146ms (ActiveRecord: 1.1ms | Allocations: 4717)
-
-
-Started GET "/" for ::1 at 2021-10-30 20:11:43 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (2.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 879)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 284.0ms | Allocations: 8283)
-Completed 200 OK in 292ms (Views: 288.7ms | ActiveRecord: 2.1ms | Allocations: 8766)
-
-
-Started GET "/users/sign_up" for ::1 at 2021-10-30 20:11:46 +0200
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
+Started GET "/users/sign_up" for ::1 at 2021-11-02 09:52:18 +0200
+Processing by RegistrationsController#new as HTML
   Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 5.2ms | Allocations: 514)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 296.7ms | Allocations: 17401)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 567.8ms | Allocations: 24692)
-Completed 200 OK in 587ms (Views: 585.1ms | ActiveRecord: 0.0ms | Allocations: 26470)
+  Rendered devise/shared/_links.html.erb (2.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (450.7ms)
+Started GET "/users/sign_in" for ::1 at 2021-11-02 09:52:20 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+Started GET "/users/password/new" for ::1 at 2021-11-02 09:52:20 +0200
+  Rendered devise/shared/_links.html.erb (2.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (409.8ms)
+Completed 200 OK in 2659ms (Views: 2657.1ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/users" for ::1 at 2021-10-30 20:12:00 +0200
-Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"sayed", "email"=>"elarabymahmoud2043@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-[31mUnpermitted parameter: :name[0m
-  [1m[36mTRANSACTION (1.1ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elarabymahmoud2043@gmail.com"], ["LIMIT", 1]]
-  [1m[36mTRANSACTION (1.2ms)[0m  [1m[31mROLLBACK[0m
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 72)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 38.7ms | Allocations: 10008)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 235.5ms | Allocations: 17336)
-Completed 200 OK in 646ms (Views: 237.4ms | ActiveRecord: 3.8ms | Allocations: 25077)
+Completed 200 OK in 1420ms (Views: 1416.9ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/users" for ::1 at 2021-10-30 20:12:19 +0200
-Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"sayed", "email"=>"elarabymahmoud2043@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-[31mUnpermitted parameter: :name[0m
-  [1m[36mTRANSACTION (1.5ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists? (2.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elarabymahmoud2043@gmail.com"], ["LIMIT", 1]]
-  [1m[36mUser Create (2.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "elarabymahmoud2043@gmail.com"], ["encrypted_password", "$2a$12$8gWlrByuutqacOnljwBkguDBoISvHuFCNJJATX3nSO/iDdupv5b.W"], ["created_at", "2021-10-30 18:12:20.332226"], ["updated_at", "2021-10-30 18:12:20.332226"]]
-  [1m[36mTRANSACTION (28.4ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/
-Completed 302 Found in 398ms (ActiveRecord: 34.7ms | Allocations: 6283)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.3ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (117.7ms)
+Completed 200 OK in 868ms (Views: 728.4ms | ActiveRecord: 0.0ms)
 
 
-Started GET "/" for ::1 at 2021-10-30 20:12:20 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.6ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 877)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 234.5ms | Allocations: 9184)
-Completed 200 OK in 238ms (Views: 231.6ms | ActiveRecord: 4.9ms | Allocations: 9675)
-
-
-Started GET "/" for ::1 at 2021-10-30 20:13:34 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.4ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 878)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 255.8ms | Allocations: 9057)
-Completed 200 OK in 264ms (Views: 257.1ms | ActiveRecord: 3.9ms | Allocations: 9538)
-
-
-Started DELETE "/users/sign_out" for ::1 at 2021-10-30 20:13:36 +0200
-Processing by Devise::SessionsController#destroy as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]"}
-  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
-Redirected to http://localhost:3000/
-Completed 302 Found in 13ms (ActiveRecord: 2.3ms | Allocations: 1986)
-
-
-Started GET "/" for ::1 at 2021-10-30 20:13:37 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.4ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 879)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 180.4ms | Allocations: 8204)
-Completed 200 OK in 184ms (Views: 180.7ms | ActiveRecord: 1.4ms | Allocations: 8687)
-
-
-Started GET "/users/sign_up" for ::1 at 2021-10-30 20:13:39 +0200
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 72)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 19.2ms | Allocations: 9107)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 206.7ms | Allocations: 16301)
-Completed 200 OK in 210ms (Views: 208.3ms | ActiveRecord: 0.0ms | Allocations: 16918)
-
-
-Started POST "/users" for ::1 at 2021-10-30 20:13:54 +0200
-Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elaraby Elaidy", "email"=>"elarabyelaidy@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-[31mUnpermitted parameter: :name[0m
-  [1m[36mTRANSACTION (1.0ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elarabyelaidy@gmail.com"], ["LIMIT", 1]]
-  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "elarabyelaidy@gmail.com"], ["encrypted_password", "$2a$12$LTO/ibDisGEY3lRZR23Ebus68S6jpD2Aeei1CiKCNmnMb2/F.Oy6y"], ["created_at", "2021-10-30 18:13:54.511495"], ["updated_at", "2021-10-30 18:13:54.511495"]]
-  [1m[36mTRANSACTION (26.3ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/
-Completed 302 Found in 367ms (ActiveRecord: 30.8ms | Allocations: 6056)
-
-
-Started GET "/" for ::1 at 2021-10-30 20:13:54 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 877)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 233.8ms | Allocations: 9060)
-Completed 200 OK in 238ms (Views: 233.6ms | ActiveRecord: 2.3ms | Allocations: 9549)
-
-
-Started GET "/" for ::1 at 2021-10-30 20:14:19 +0200
+Started GET "/users/password/new" for ::1 at 2021-11-02 09:55:18 +0200
   [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.5ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 15.1ms | Allocations: 1388)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 1989.2ms | Allocations: 24577)
-Completed 200 OK in 2116ms (Views: 2012.3ms | ActiveRecord: 11.5ms | Allocations: 28415)
+Processing by Devise::PasswordsController#new as HTML
+  Rendering devise/passwords/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/passwords/new.html.erb within layouts/application (931.9ms)
+Completed 200 OK in 7435ms (Views: 7234.3ms | ActiveRecord: 13.0ms)
 
 
-Started DELETE "/users/sign_out" for ::1 at 2021-10-30 20:14:24 +0200
-Processing by Devise::SessionsController#destroy as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]"}
-  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Started GET "/users/sign_up" for ::1 at 2021-11-02 09:56:00 +0200
+Processing by RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (300.7ms)
+Completed 200 OK in 1403ms (Views: 1400.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2021-11-02 09:56:14 +0200
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Cu2VX2LcFeXgDJKlT7xN6CYn7YkGPJ5ju7esEISJtN4JfTWggFQQowTWWeIcQTjCMYPSx/8C9hCUAwvndPY9Kg==", "user"=>{"name"=>"Elaraby Elaidy", "email"=>"eeee@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (2.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eeee@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (19.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?, ?)[0m  [["email", "eeee@gmail.com"], ["encrypted_password", "$2a$12$16AiqTFwgLviM5VqUA8.YuqsFIDTl46n9NKnLgG8CfJUhYBuuRP1a"], ["created_at", "2021-11-02 07:56:15.373373"], ["updated_at", "2021-11-02 07:56:15.373373"], ["name", "Elaraby Elaidy"]]
+  [1m[35m (157.0ms)[0m  [1m[36mcommit transaction[0m
 Redirected to http://localhost:3000/
-Completed 302 Found in 94ms (ActiveRecord: 1.5ms | Allocations: 4585)
+Completed 302 Found in 937ms (ActiveRecord: 179.0ms)
 
 
-Started GET "/" for ::1 at 2021-10-30 20:14:24 +0200
+Started GET "/" for ::1 at 2021-11-02 09:56:15 +0200
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.3ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 9.2ms | Allocations: 879)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 203.6ms | Allocations: 8285)
-Completed 200 OK in 208ms (Views: 204.7ms | ActiveRecord: 1.3ms | Allocations: 8770)
+  [1m[36mShot Load (2.6ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
+  Rendered shots/index.html.erb within layouts/application (13.2ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 729ms (Views: 592.6ms | ActiveRecord: 10.8ms)
 
 
-Started GET "/users/sign_up" for ::1 at 2021-10-30 20:14:27 +0200
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 4.8ms | Allocations: 514)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 354.1ms | Allocations: 17415)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 636.1ms | Allocations: 24692)
-Completed 200 OK in 671ms (Views: 667.7ms | ActiveRecord: 0.0ms | Allocations: 26458)
-
-
-Started POST "/users" for ::1 at 2021-10-30 20:14:44 +0200
-Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elaraby Elaidy", "email"=>"elarabyelaidy@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-[31mUnpermitted parameter: :name[0m
-  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists? (2.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elarabyelaidy@gmail.com"], ["LIMIT", 1]]
-  [1m[36mTRANSACTION (1.7ms)[0m  [1m[31mROLLBACK[0m
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 91)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 27.1ms | Allocations: 10253)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 216.6ms | Allocations: 17673)
-Completed 200 OK in 649ms (Views: 218.7ms | ActiveRecord: 14.2ms | Allocations: 30195)
-
-
-  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
-  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
-  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Destroy (1.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 1]]
-  [1m[36mTRANSACTION (20.9ms)[0m  [1m[35mCOMMIT[0m
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Destroy (1.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
-  [1m[36mTRANSACTION (22.0ms)[0m  [1m[35mCOMMIT[0m
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 3]]
-  [1m[36mTRANSACTION (23.9ms)[0m  [1m[35mCOMMIT[0m
-Started GET "/users" for ::1 at 2021-10-30 20:16:21 +0200
-  
-ActionController::RoutingError (No route matches [GET] "/users"):
-  
-Started GET "/" for ::1 at 2021-10-30 20:16:26 +0200
+Started GET "/" for ::1 at 2021-11-02 09:56:28 +0200
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.6ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 949)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 193.5ms | Allocations: 8470)
-Completed 200 OK in 216ms (Views: 194.8ms | ActiveRecord: 1.6ms | Allocations: 9635)
+  [1m[36mShot Load (2.5ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
+  Rendered shots/index.html.erb within layouts/application (7.5ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 670ms (Views: 572.8ms | ActiveRecord: 4.3ms)
 
 
-Started GET "/users/sign_up" for ::1 at 2021-10-30 20:16:29 +0200
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 72)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 38.0ms | Allocations: 9134)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 251.7ms | Allocations: 16328)
-Completed 200 OK in 256ms (Views: 253.8ms | ActiveRecord: 0.0ms | Allocations: 16948)
-
-
-Started POST "/users" for ::1 at 2021-10-30 20:16:41 +0200
-Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elaraby Elaidy", "email"=>"elarabyelaidy@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-[31mUnpermitted parameter: :name[0m
-  [1m[36mTRANSACTION (2.3ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists? (3.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elarabyelaidy@gmail.com"], ["LIMIT", 1]]
-  [1m[36mUser Create (2.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "elarabyelaidy@gmail.com"], ["encrypted_password", "$2a$12$WNxfxsE2uGLxCwB7XOCaIOfRYo9W9E6nbTLI89oFuWQ9R03TxnKfO"], ["created_at", "2021-10-30 18:16:41.875002"], ["updated_at", "2021-10-30 18:16:41.875002"]]
-  [1m[36mTRANSACTION (25.6ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/
-Completed 302 Found in 414ms (ActiveRecord: 33.0ms | Allocations: 6345)
-
-
-Started GET "/" for ::1 at 2021-10-30 20:16:42 +0200
+Started GET "/" for ::1 at 2021-11-02 11:00:25 +0200
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 877)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 201.2ms | Allocations: 9248)
-Completed 200 OK in 205ms (Views: 200.5ms | ActiveRecord: 2.6ms | Allocations: 9738)
-
-
-  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 4]]
-  [1m[36mTRANSACTION (27.1ms)[0m  [1m[35mCOMMIT[0m
-Started GET "/" for ::1 at 2021-10-30 20:17:38 +0200
-  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.4ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 16.1ms | Allocations: 1388)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 4], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 1753.6ms | Allocations: 20974)
-Completed 200 OK in 1852ms (Views: 1773.1ms | ActiveRecord: 10.7ms | Allocations: 24811)
-
-
-Started GET "/users/sign_up" for ::1 at 2021-10-30 20:17:44 +0200
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 12.8ms | Allocations: 515)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 438.8ms | Allocations: 18991)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 664.7ms | Allocations: 26395)
-Completed 200 OK in 696ms (Views: 683.5ms | ActiveRecord: 0.0ms | Allocations: 31939)
-
-
-Started POST "/users" for ::1 at 2021-10-30 20:17:57 +0200
-Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elaraby Elaidy", "email"=>"elarabyelaidy@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-[31mUnpermitted parameter: :name[0m
-  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists? (3.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elarabyelaidy@gmail.com"], ["LIMIT", 1]]
-  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "elarabyelaidy@gmail.com"], ["encrypted_password", "$2a$12$x9qb44NVBko.RxZC7nVIaOlMKddwa8OeFpwyVxbUX8X2q6ki0zG1i"], ["created_at", "2021-10-30 18:17:57.922724"], ["updated_at", "2021-10-30 18:17:57.922724"]]
-  [1m[36mTRANSACTION (24.7ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/
-Completed 302 Found in 494ms (ActiveRecord: 31.0ms | Allocations: 11012)
-
-
-Started GET "/" for ::1 at 2021-10-30 20:17:58 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.2ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 877)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 199.5ms | Allocations: 9114)
-Completed 200 OK in 203ms (Views: 198.0ms | ActiveRecord: 3.4ms | Allocations: 9605)
-
-
-  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Destroy (0.8ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 5]]
-  [1m[36mTRANSACTION (22.3ms)[0m  [1m[35mCOMMIT[0m
-Started GET "/" for ::1 at 2021-10-30 20:18:38 +0200
-  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (2.8ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 24.1ms | Allocations: 1388)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 1734.6ms | Allocations: 20976)
-Completed 200 OK in 1876ms (Views: 1790.1ms | ActiveRecord: 12.3ms | Allocations: 24814)
-
-
-Started GET "/users/sign_up" for ::1 at 2021-10-30 20:18:43 +0200
-Processing by Devise::RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 5.5ms | Allocations: 514)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 321.8ms | Allocations: 18987)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 518.1ms | Allocations: 26266)
-Completed 200 OK in 550ms (Views: 539.0ms | ActiveRecord: 0.0ms | Allocations: 31806)
-
-
-Started POST "/users" for ::1 at 2021-10-30 20:18:56 +0200
-Processing by Devise::RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elaraby Elaidy", "email"=>"elarabyelaidy@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-[31mUnpermitted parameter: :name[0m
-  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elarabyelaidy@gmail.com"], ["LIMIT", 1]]
-  [1m[36mUser Create (1.5ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "elarabyelaidy@gmail.com"], ["encrypted_password", "$2a$12$.IUH2LMeDJNbzqD0MEAiqu5gyZVg0Rpfp6bROBlCYnVWPSS4xdVRO"], ["created_at", "2021-10-30 18:18:56.602488"], ["updated_at", "2021-10-30 18:18:56.602488"]]
-  [1m[36mTRANSACTION (28.1ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/
-Completed 302 Found in 470ms (ActiveRecord: 32.5ms | Allocations: 10994)
-
-
-Started GET "/" for ::1 at 2021-10-30 20:18:56 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 877)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 267.0ms | Allocations: 9112)
-Completed 200 OK in 271ms (Views: 266.4ms | ActiveRecord: 2.6ms | Allocations: 9603)
-
-
-  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
-Started GET "/" for ::1 at 2021-10-30 20:22:29 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
   [1m[36mShot Load (2.0ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 961)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 305.7ms | Allocations: 14082)
-Completed 200 OK in 324ms (Views: 292.0ms | ActiveRecord: 16.3ms | Allocations: 15269)
+  Rendered shots/index.html.erb within layouts/application (26.3ms)
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2559ms (Views: 2385.8ms | ActiveRecord: 18.4ms)
 
 
-Started DELETE "/users/sign_out" for ::1 at 2021-10-30 20:23:01 +0200
-  [1m[35m (1.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by Devise::SessionsController#destroy as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]"}
-  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
-Redirected to http://localhost:3000/
-Completed 302 Found in 181ms (ActiveRecord: 9.8ms | Allocations: 11449)
+Started GET "/shots/new" for ::1 at 2021-11-02 11:00:30 +0200
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (777.8ms)
+  Rendered shots/new.html.erb within layouts/application (903.7ms)
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1721ms (Views: 1456.0ms | ActiveRecord: 8.4ms)
 
 
-Started GET "/" for ::1 at 2021-10-30 20:23:02 +0200
+Started GET "/shots/new" for ::1 at 2021-11-02 11:03:08 +0200
+  [1m[35m (3.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (884.6ms)
+  Rendered shots/new.html.erb within layouts/application (1005.8ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 7134ms (Views: 6931.2ms | ActiveRecord: 20.4ms)
+
+
+Started GET "/shots" for ::1 at 2021-11-02 11:03:22 +0200
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.2ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 17.0ms | Allocations: 1441)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 1716.4ms | Allocations: 17908)
-Completed 200 OK in 1785ms (Views: 1743.8ms | ActiveRecord: 1.2ms | Allocations: 20617)
+  [1m[36mShot Load (2.2ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
+  Rendered shots/index.html.erb within layouts/application (5.7ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 675ms (Views: 534.0ms | ActiveRecord: 4.8ms)
 
 
-Started GET "/users/sign_up" for ::1 at 2021-10-30 20:23:07 +0200
+Started GET "/shots/new" for ::1 at 2021-11-02 11:03:25 +0200
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (62.5ms)
+  Rendered shots/new.html.erb within layouts/application (136.4ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 904ms (Views: 810.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:06:41 +0200
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (741.5ms)
+  Rendered shots/new.html.erb within layouts/application (833.7ms)
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3170ms (Views: 2952.9ms | ActiveRecord: 26.5ms)
+
+
+  [1m[35m (9.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddUserShotToShot (20211102091637)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (11.4ms)[0m  [1m[35mALTER TABLE "shots" ADD "user_shot" varchar[0m
+  [1m[35mSQL (2.8ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20211102091637"]]
+  [1m[35m (117.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (7.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.3ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (3.0ms)[0m  [1m[34m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+Started GET "/shots/new" for ::1 at 2021-11-02 11:22:15 +0200
+  [1m[35m (13.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (886.0ms)
+  Rendered shots/new.html.erb within layouts/application (970.7ms)
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 3462ms (Views: 3200.3ms | ActiveRecord: 21.6ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:23:13 +0200
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (97.4ms)
+  Rendered shots/new.html.erb within layouts/application (199.6ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 765ms (Views: 702.4ms | ActiveRecord: 2.1ms)
+
+
+Started POST "/shots" for ::1 at 2021-11-02 11:24:12 +0200
+Processing by ShotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RxaS9UoZxG4ubwEH7yeAi3qUCtukHwWUFpCl2ib3EWQfrzL/X+gSUCgTb3TraN/W+lmuXNU7we1yxfOe1M0B4g==", "shot"=>{"user_shot"=>#<ActionDispatch::Http::UploadedFile:0x00007f454c4af928 @tempfile=#<Tempfile:/tmp/RackMultipart20211102-34464-e7s3dh.jpg>, @original_filename="ryan-ancill-aJYO8JmVodY-unsplash.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"shot[user_shot]\"; filename=\"ryan-ancill-aJYO8JmVodY-unsplash.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"first shot ", "description"=>"wwww"}, "commit"=>"Create Shot"}
+Unpermitted parameter: :user_shot
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (95.5ms)
+  Rendered shots/new.html.erb within layouts/application (169.1ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 422 Unprocessable Entity in 769ms (Views: 666.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/shots" for ::1 at 2021-11-02 11:24:18 +0200
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (1.9ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
+  Rendered shots/index.html.erb within layouts/application (4.3ms)
+  [1m[36mUser Load (3.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 616ms (Views: 549.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:24:24 +0200
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (116.4ms)
+  Rendered shots/new.html.erb within layouts/application (172.8ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 852ms (Views: 759.0ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:28:15 +0200
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (924.5ms)
+  Rendered shots/new.html.erb within layouts/application (1005.8ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4377ms (Views: 4179.7ms | ActiveRecord: 19.2ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:28:28 +0200
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (118.5ms)
+  Rendered shots/new.html.erb within layouts/application (217.8ms)
+  [1m[36mUser Load (18.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1034ms (Views: 943.5ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:28:37 +0200
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (92.9ms)
+  Rendered shots/new.html.erb within layouts/application (153.9ms)
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 734ms (Views: 657.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:28:43 +0200
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (97.1ms)
+  Rendered shots/new.html.erb within layouts/application (160.7ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 765ms (Views: 665.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:28:44 +0200
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (118.3ms)
+  Rendered shots/new.html.erb within layouts/application (185.7ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 894ms (Views: 815.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:28:48 +0200
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (103.9ms)
+  Rendered shots/new.html.erb within layouts/application (188.7ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 899ms (Views: 822.4ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:30:01 +0200
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#new as HTML
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (928.2ms)
+  Rendered shots/new.html.erb within layouts/application (1025.2ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 4835ms (Views: 4583.9ms | ActiveRecord: 20.2ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:49:56 +0200
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#new as HTML
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (941.8ms)
+  Rendered shots/new.html.erb within layouts/application (1032.1ms)
+Completed 200 OK in 3675ms (Views: 3147.4ms | ActiveRecord: 22.6ms)
+
+
+Started POST "/shots" for ::1 at 2021-11-02 11:50:19 +0200
+Processing by ShotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FdgengmrcAVZxzwHDsNCJ8jGkVoLQe2nEW5lMlDcjspNYb6UHFqmO1+7UnQKjB16SAs13XplKd51OzN2ouaeTA==", "shot"=>{"user_shot"=>#<ActionDispatch::Http::UploadedFile:0x0000562ee627c390 @tempfile=#<Tempfile:/tmp/RackMultipart20211102-34587-1qo9m3o.jpg>, @original_filename="ryan-ancill-aJYO8JmVodY-unsplash.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"shot[user_shot]\"; filename=\"ryan-ancill-aJYO8JmVodY-unsplash.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"first shot ", "description"=>"test"}, "commit"=>"Create Shot"}
+  [1m[36mUser Load (4.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (9.3ms)[0m  [1m[32mINSERT INTO "shots" ("title", "description", "user_id", "created_at", "updated_at", "user_shot") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "first shot "], ["description", "test"], ["user_id", 1], ["created_at", "2021-11-02 09:50:25.014644"], ["updated_at", "2021-11-02 09:50:25.014644"], ["user_shot", "ryan-ancill-aJYO8JmVodY-unsplash.jpg"]]
+  [1m[35m (254.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/shots/1
+Completed 302 Found in 6629ms (ActiveRecord: 267.9ms)
+
+
+Started GET "/shots/1" for ::1 at 2021-11-02 11:50:26 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShot Load (4.1ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  Rendered shots/show.html.erb within layouts/application (1.8ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 991ms (Views: 846.7ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/shots/1" for ::1 at 2021-11-02 11:50:36 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mShot Load (2.6ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  Rendered shots/show.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 690ms (Views: 564.4ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/" for ::1 at 2021-11-02 11:50:39 +0200
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (2.5ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (8.0ms)
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 673ms (Views: 538.4ms | ActiveRecord: 4.7ms)
+
+
+Started GET "/" for ::1 at 2021-11-02 11:51:06 +0200
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (2.7ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (10.2ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1078ms (Views: 925.9ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:51:09 +0200
+Processing by ShotsController#new as HTML
+  [1m[36mUser Load (5.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (171.4ms)
+  Rendered shots/new.html.erb within layouts/application (293.4ms)
+Completed 200 OK in 1007ms (Views: 853.8ms | ActiveRecord: 5.8ms)
+
+
+Started POST "/shots" for ::1 at 2021-11-02 11:51:25 +0200
+Processing by ShotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u0nhRpLzjsWGcVZ1jPWMTJmzOG5c5BNfwgEcxC+4LPg9uu4/ZuG6aFr4IHq6YgckP46UIBzEsM4lIQFkBndv2w==", "shot"=>{"user_shot"=>#<ActionDispatch::Http::UploadedFile:0x00007f1c513f7040 @tempfile=#<Tempfile:/tmp/RackMultipart20211102-34587-17sm9kw.jpg>, @original_filename="Vegas_bomb_recipe_rtn9xr.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"shot[user_shot]\"; filename=\"Vegas_bomb_recipe_rtn9xr.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"first shot ", "description"=>"teeet"}, "commit"=>"Create Shot"}
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.5ms)[0m  [1m[32mINSERT INTO "shots" ("title", "description", "user_id", "created_at", "updated_at", "user_shot") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "first shot "], ["description", "teeet"], ["user_id", 1], ["created_at", "2021-11-02 09:51:26.557028"], ["updated_at", "2021-11-02 09:51:26.557028"], ["user_shot", "Vegas_bomb_recipe_rtn9xr.jpg"]]
+  [1m[35m (119.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/shots/2
+Completed 302 Found in 1124ms (ActiveRecord: 129.3ms)
+
+
+Started GET "/shots/2" for ::1 at 2021-11-02 11:51:26 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mShot Load (2.4ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  Rendered shots/show.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 689ms (Views: 600.5ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/" for ::1 at 2021-11-02 11:51:30 +0200
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (2.1ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (11.5ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 735ms (Views: 602.4ms | ActiveRecord: 3.9ms)
+
+
+Started GET "/" for ::1 at 2021-11-02 11:52:18 +0200
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (3.0ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (13.1ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1184ms (Views: 1029.3ms | ActiveRecord: 5.5ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:52:23 +0200
+Processing by ShotsController#new as HTML
+  [1m[36mUser Load (121.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (158.1ms)
+  Rendered shots/new.html.erb within layouts/application (261.2ms)
+Completed 200 OK in 1153ms (Views: 885.3ms | ActiveRecord: 121.3ms)
+
+
+Started POST "/shots" for ::1 at 2021-11-02 11:52:35 +0200
+Processing by ShotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fL4pUdQZ118Vr4LqMTggGOT4Jzkk9i7WkJP3T0U6YKz6TSYoIAvj8skm9OUHr6twQsWLd2TWjUd3s+rvbPUjjw==", "shot"=>{"user_shot"=>#<ActionDispatch::Http::UploadedFile:0x00007f1c5086c360 @tempfile=#<Tempfile:/tmp/RackMultipart20211102-34587-1w7rcr6.jpg>, @original_filename="Vegas_bomb_recipe_rtn9xr.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"shot[user_shot]\"; filename=\"Vegas_bomb_recipe_rtn9xr.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"aq", "description"=>"aaa"}, "commit"=>"Create Shot"}
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (6.5ms)[0m  [1m[32mINSERT INTO "shots" ("title", "description", "user_id", "created_at", "updated_at", "user_shot") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "aq"], ["description", "aaa"], ["user_id", 1], ["created_at", "2021-11-02 09:52:36.572686"], ["updated_at", "2021-11-02 09:52:36.572686"], ["user_shot", "Vegas_bomb_recipe_rtn9xr.jpg"]]
+  [1m[35m (121.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/shots/3
+Completed 302 Found in 991ms (ActiveRecord: 130.8ms)
+
+
+Started GET "/shots/3" for ::1 at 2021-11-02 11:52:36 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mShot Load (2.6ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  Rendered shots/show.html.erb within layouts/application (1.4ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 598ms (Views: 512.7ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/shots/3" for ::1 at 2021-11-02 11:53:12 +0200
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mShot Load (1.9ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  Rendered shots/show.html.erb within layouts/application (22.2ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 2427ms (Views: 2174.1ms | ActiveRecord: 21.5ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:53:19 +0200
+Processing by ShotsController#new as HTML
+  [1m[36mUser Load (3.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (1200.0ms)
+  Rendered shots/new.html.erb within layouts/application (1266.7ms)
+Completed 200 OK in 2209ms (Views: 1875.5ms | ActiveRecord: 3.8ms)
+
+
+Started POST "/shots" for ::1 at 2021-11-02 11:53:29 +0200
+Processing by ShotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kHeeVWJ2/QOjw/U77IHqogJFaEkGyC26QLXEO+njbLgWhJEslmTJrn9KgzTaFmHKpHjEB0bojiunldmbwCwvmw==", "shot"=>{"user_shot"=>#<ActionDispatch::Http::UploadedFile:0x000055a84b8da650 @tempfile=#<Tempfile:/tmp/RackMultipart20211102-34679-18n3dyy.jpg>, @original_filename="Vegas_bomb_recipe_rtn9xr.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"shot[user_shot]\"; filename=\"Vegas_bomb_recipe_rtn9xr.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"q", "description"=>"q"}, "commit"=>"Create Shot"}
+  [1m[36mUser Load (4.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.9ms)[0m  [1m[32mINSERT INTO "shots" ("title", "description", "user_id", "created_at", "updated_at", "user_shot") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "q"], ["description", "q"], ["user_id", 1], ["created_at", "2021-11-02 09:53:30.347171"], ["updated_at", "2021-11-02 09:53:30.347171"], ["user_shot", "Vegas_bomb_recipe_rtn9xr.jpg"]]
+  [1m[35m (130.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/shots/4
+Completed 302 Found in 961ms (ActiveRecord: 140.9ms)
+
+
+Started GET "/shots/4" for ::1 at 2021-11-02 11:53:30 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mShot Load (2.9ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  Rendered shots/show.html.erb within layouts/application (1.5ms)
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 564ms (Views: 487.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 11:54:07 +0200
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#new as HTML
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (1308.5ms)
+  Rendered shots/new.html.erb within layouts/application (1414.7ms)
+Completed 200 OK in 4957ms (Views: 4387.4ms | ActiveRecord: 19.6ms)
+
+
+Started POST "/shots" for ::1 at 2021-11-02 11:54:26 +0200
+Processing by ShotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9wuIhOPgS5gvVgNDsnC7GtNvo47PiqEDeyUtjOzAVU5x+If9F/J/NfPfdUyE5zBydVIPwI+qApKcBTAsxQ8WbQ==", "shot"=>{"user_shot"=>#<ActionDispatch::Http::UploadedFile:0x00007fc1f809db40 @tempfile=#<Tempfile:/tmp/RackMultipart20211102-34712-5lupac.jpg>, @original_filename="Vegas_bomb_recipe_rtn9xr.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"shot[user_shot]\"; filename=\"Vegas_bomb_recipe_rtn9xr.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"swws", "description"=>"wswsw"}, "commit"=>"Create Shot"}
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (8.4ms)[0m  [1m[32mINSERT INTO "shots" ("title", "description", "user_id", "created_at", "updated_at", "user_shot") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "swws"], ["description", "wswsw"], ["user_id", 1], ["created_at", "2021-11-02 09:54:27.069543"], ["updated_at", "2021-11-02 09:54:27.069543"], ["user_shot", "Vegas_bomb_recipe_rtn9xr.jpg"]]
+  [1m[35m (158.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 947ms (ActiveRecord: 168.9ms)
+
+
+
+ActionController::ActionControllerError - Cannot redirect to nil!:
+  app/controllers/shots_controller.rb:28:in `block (2 levels) in create'
+  app/controllers/shots_controller.rb:26:in `create'
+
+Started POST "/__better_errors/fa0e308f81a25baf/variables" for ::1 at 2021-11-02 11:54:27 +0200
+Started GET "/" for ::1 at 2021-11-02 12:03:14 +0200
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (2.0ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (69.0ms)
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 7014ms (Views: 6829.5ms | ActiveRecord: 20.4ms)
+
+
+  [1m[36mUser Load (17.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mShot Load (0.6ms)[0m  [1m[34mSELECT "shots".* FROM "shots" WHERE "shots"."user_id" = ?[0m  [["user_id", 1]]
+  [1m[35mSQL (6.5ms)[0m  [1m[31mDELETE FROM "shots" WHERE "shots"."id" = ?[0m  [["id", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "shots" WHERE "shots"."id" = ?[0m  [["id", 2]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "shots" WHERE "shots"."id" = ?[0m  [["id", 3]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "shots" WHERE "shots"."id" = ?[0m  [["id", 4]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "shots" WHERE "shots"."id" = ?[0m  [["id", 5]]
+  [1m[35mSQL (3.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  [1m[35m (133.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2021-11-02 12:04:57 +0200
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (4.9ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (9.4ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+Completed 200 OK in 1054ms (Views: 889.3ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2021-11-02 12:05:02 +0200
 Processing by RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
   Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 4.6ms | Allocations: 512)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 271.7ms | Allocations: 17401)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 476.6ms | Allocations: 24680)
-Completed 200 OK in 515ms (Views: 511.6ms | ActiveRecord: 0.0ms | Allocations: 27164)
+  Rendered devise/shared/_links.html.erb (2.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (1005.2ms)
+Completed 200 OK in 1748ms (Views: 1746.0ms | ActiveRecord: 0.0ms)
 
 
-Started POST "/users" for ::1 at 2021-10-30 20:23:19 +0200
+Started POST "/users" for ::1 at 2021-11-02 12:05:16 +0200
 Processing by RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elaraby Elaidy", "email"=>"elarabyelaidy@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-  [1m[36mTRANSACTION (3.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists? (2.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elarabyelaidy@gmail.com"], ["LIMIT", 1]]
-  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mROLLBACK[0m
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 72)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 29.2ms | Allocations: 9982)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 231.5ms | Allocations: 17185)
-Completed 200 OK in 676ms (Views: 233.2ms | ActiveRecord: 6.9ms | Allocations: 27085)
-
-
-  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
-  [1m[36mTRANSACTION (0.4ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 6]]
-  [1m[36mTRANSACTION (21.0ms)[0m  [1m[35mCOMMIT[0m
-Started GET "/users" for ::1 at 2021-10-30 20:23:51 +0200
-  
-ActionController::RoutingError (No route matches [GET] "/users"):
-  
-Started GET "/" for ::1 at 2021-10-30 20:23:56 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.7ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 6.9ms | Allocations: 960)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 202.8ms | Allocations: 8502)
-Completed 200 OK in 219ms (Views: 203.3ms | ActiveRecord: 1.7ms | Allocations: 9692)
-
-
-Started GET "/" for ::1 at 2021-10-30 20:23:57 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.2ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 884)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 289.4ms | Allocations: 8198)
-Completed 200 OK in 292ms (Views: 289.8ms | ActiveRecord: 1.2ms | Allocations: 8675)
-
-
-Started GET "/users/sign_up" for ::1 at 2021-10-30 20:23:59 +0200
-Processing by RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 88)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 27.4ms | Allocations: 9379)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 337.9ms | Allocations: 16652)
-Completed 200 OK in 376ms (Views: 341.2ms | ActiveRecord: 13.7ms | Allocations: 22222)
-
-
-Started POST "/users" for ::1 at 2021-10-30 20:24:09 +0200
-Processing by RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Elaraby Elaidy", "email"=>"elarabyelaidy@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists? (2.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elarabyelaidy@gmail.com"], ["LIMIT", 1]]
-  [1m[36mUser Create (2.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "elarabyelaidy@gmail.com"], ["encrypted_password", "$2a$12$03G8XYd/ZSdpfjRAY.huf.6dBi0eZ5Gu4sw20ZGfAwvPDCwaz24ni"], ["created_at", "2021-10-30 18:24:10.191614"], ["updated_at", "2021-10-30 18:24:10.191614"], ["name", "Elaraby Elaidy"]]
-  [1m[36mTRANSACTION (31.1ms)[0m  [1m[35mCOMMIT[0m
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4+OerPIHcEulUetoVdNTAlSh8kruPLXXwZiPlVKzGV7gcz5TEI91DUGLIC8GLiYoQwXNBBcC3aTuLChiosyQqg==", "user"=>{"name"=>"Elaraby Elaidy", "email"=>"elarabyelaidy@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.6ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (1.7ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "elarabyelaidy@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (7.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?, ?)[0m  [["email", "elarabyelaidy@gmail.com"], ["encrypted_password", "$2a$12$MAqA0gItAOH.HEbcm5XM8eTL7kbvYKgPj.gl52CjNdSbILh86Pu3C"], ["created_at", "2021-11-02 10:05:16.798263"], ["updated_at", "2021-11-02 10:05:16.798263"], ["name", "Elaraby Elaidy"]]
+  [1m[35m (132.8ms)[0m  [1m[36mcommit transaction[0m
 Redirected to http://localhost:3000/
-Completed 302 Found in 462ms (ActiveRecord: 37.9ms | Allocations: 6640)
+Completed 302 Found in 842ms (ActiveRecord: 142.9ms)
 
 
-Started GET "/" for ::1 at 2021-10-30 20:24:10 +0200
+Started GET "/" for ::1 at 2021-11-02 12:05:17 +0200
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.2ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 877)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 216.9ms | Allocations: 9178)
-Completed 200 OK in 220ms (Views: 215.8ms | ActiveRecord: 3.0ms | Allocations: 9669)
+  [1m[36mShot Load (2.5ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (4.6ms)
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 584ms (Views: 518.2ms | ActiveRecord: 5.2ms)
 
 
-Started GET "/" for ::1 at 2021-10-31 16:16:21 +0200
-  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-11-02 12:05:22 +0200
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (2.8ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 60.3ms | Allocations: 1388)
-Started GET "/" for ::1 at 2021-10-31 16:16:23 +0200
+  [1m[36mShot Load (1.7ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (3.9ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 579ms (Views: 488.6ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/shots/new" for ::1 at 2021-11-02 12:05:27 +0200
+Processing by ShotsController#new as HTML
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering shots/new.html.erb within layouts/application
+  Rendered shots/_form.html.erb (152.9ms)
+  Rendered shots/new.html.erb within layouts/application (222.2ms)
+Completed 200 OK in 1145ms (Views: 786.3ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/shots" for ::1 at 2021-11-02 12:05:39 +0200
+Processing by ShotsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"B9XitluYf9+mb0UHZLYW/yQm5U+oltmyBSXR7u0JeMqBJu3Pr4pLcnrmMwhSIZ2XghtJAei2eiPiBcxOxMY76Q==", "shot"=>{"user_shot"=>#<ActionDispatch::Http::UploadedFile:0x00007f202dd1ac50 @tempfile=#<Tempfile:/tmp/RackMultipart20211102-35294-17lu35n.jpg>, @original_filename="Vegas_bomb_recipe_rtn9xr.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"shot[user_shot]\"; filename=\"Vegas_bomb_recipe_rtn9xr.jpg\"\r\nContent-Type: image/jpeg\r\n">, "title"=>"first shot ", "description"=>"shit"}, "commit"=>"Create Shot"}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (5.7ms)[0m  [1m[32mINSERT INTO "shots" ("title", "description", "user_id", "created_at", "updated_at", "user_shot") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "first shot "], ["description", "shit"], ["user_id", 2], ["created_at", "2021-11-02 10:05:39.860640"], ["updated_at", "2021-11-02 10:05:39.860640"], ["user_shot", "Vegas_bomb_recipe_rtn9xr.jpg"]]
+  [1m[35m (138.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/shots/6
+Completed 302 Found in 958ms (ActiveRecord: 147.7ms)
+
+
+Started GET "/shots/6" for ::1 at 2021-11-02 12:05:40 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShot Load (2.4ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  Rendered shots/show.html.erb within layouts/application (1.6ms)
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 566ms (Views: 457.5ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for ::1 at 2021-11-02 12:05:44 +0200
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (11.7ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 86.3ms | Allocations: 4203)
-[Webpacker] Everything's up-to-date. Nothing to do
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 1721.6ms | Allocations: 28180)
-  Rendered layout layouts/application.html.erb (Duration: 3928.4ms | Allocations: 38539)
-Completed 200 OK in 1736ms (Views: 1684.4ms | ActiveRecord: 50.0ms | Allocations: 28985)
+  [1m[36mShot Load (1.9ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (5.5ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 581ms (Views: 487.2ms | ActiveRecord: 3.9ms)
 
 
-Completed 200 OK in 4125ms (Views: 3990.6ms | ActiveRecord: 2.8ms | Allocations: 42372)
-
-
-Started GET "/" for ::1 at 2021-10-31 16:16:30 +0200
+Started GET "/" for ::1 at 2021-11-02 12:16:46 +0200
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.4ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 879)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 223.2ms | Allocations: 8193)
-Completed 200 OK in 227ms (Views: 223.8ms | ActiveRecord: 1.4ms | Allocations: 8702)
+  Rendered shots/index.html.erb within layouts/application (171.3ms)
+Completed 500 Internal Server Error in 536ms (ActiveRecord: 0.0ms)
 
 
-Started GET "/" for ::1 at 2021-10-31 16:16:33 +0200
+
+ActionView::MissingTemplate - Missing partial shots/_hero, application/_hero with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :coffee, :jbuilder]}. Searched in:
+  * "/mnt/f/github/dribble/app/views"
+  * "/home/elarabyelaidy/.rvm/gems/ruby-2.6.5/gems/devise-4.8.0/app/views":
+  app/views/shots/index.html.erb:1:in `_app_views_shots_index_html_erb__1831363528379999951_46921727690300'
+
+Started POST "/__better_errors/bbe8b8246a3f5526/variables" for ::1 at 2021-11-02 12:16:47 +0200
+  [1m[36mShot Load (3.6ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" ORDER BY created_at DESC LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2021-11-02 12:16:55 +0200
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (2.0ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 878)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 195.1ms | Allocations: 8192)
-Completed 200 OK in 199ms (Views: 195.6ms | ActiveRecord: 2.0ms | Allocations: 8672)
+  [1m[36mShot Load (4.8ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (440.4ms)
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 2992ms (Views: 2811.7ms | ActiveRecord: 18.1ms)
 
 
-Started GET "/shots/new" for ::1 at 2021-10-31 16:17:09 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 110.1ms | Allocations: 3802)
-  Rendered shots/new.html.erb within layouts/application (Duration: 132.5ms | Allocations: 4136)
-  Rendered layout layouts/application.html.erb (Duration: 134.6ms | Allocations: 4243)
-Completed 500 Internal Server Error in 164ms (ActiveRecord: 9.4ms | Allocations: 8384)
-
-
-
-ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <%= simple_form_for @shot, html: { multipart: true }  do |f| %>
-  <%= f.error_notification %>
-  <div class="columns is-centered">
-    <div class="column is-half">
-    <% #unless @shot.user_shot.blank? %>
-    <%= #image_tag (@shot.user_shot_url), id: "previewImage" %>
-    <% #end %>
-    <output id="list"></output>
-    <div id="drop_zone">Drag your shot here</div>
-    <br />
-    <%= #f.input :user_shot, label: false, input_html: { class: "file-input", type: "file" }, wrapper: false, label_html: { class: "file-label" } %>
-    <div class="field">
-      <div class="control">
-      	<%= f.input :title, label: "Title", input_html: { class: "input"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.input :description, input_html: { class: "textarea"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.button :submit, class:"button is-primary" %>
-      </div>
-    </div>
-  </div>
-</div>
-<% end %>:
-  app/views/shots/new.html.erb:4
-
-Started POST "/__better_errors/38d9dd09215802ac/variables" for ::1 at 2021-10-31 16:17:09 +0200
-Started GET "/" for ::1 at 2021-10-31 16:19:30 +0200
+Started GET "/" for ::1 at 2021-11-02 12:25:39 +0200
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
   Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (5.5ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 21.8ms | Allocations: 1142)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 404.3ms | Allocations: 9227)
-Completed 200 OK in 463ms (Views: 428.4ms | ActiveRecord: 5.5ms | Allocations: 10581)
-
-
-Started GET "/users/sign_in" for ::1 at 2021-10-31 16:19:35 +0200
-Processing by Devise::SessionsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 77.6ms | Allocations: 592)
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1247.1ms | Allocations: 18234)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 1468.2ms | Allocations: 25634)
-Completed 200 OK in 1522ms (Views: 1488.7ms | ActiveRecord: 5.2ms | Allocations: 32224)
-
-
-Started POST "/users/sign_in" for ::1 at 2021-10-31 16:19:40 +0200
-Processing by Devise::SessionsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"eeee@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
-  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "eeee@gmail.com"], ["LIMIT", 1]]
-Completed 401 Unauthorized in 39ms (ActiveRecord: 2.9ms | Allocations: 2694)
-
-
-Processing by Devise::SessionsController#new as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"eeee@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
-  Rendering layout layouts/application.html.erb
-  Rendering devise/sessions/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 119)
-  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 20.7ms | Allocations: 8516)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 225.0ms | Allocations: 15682)
-Completed 200 OK in 630ms (Views: 226.6ms | ActiveRecord: 0.0ms | Allocations: 16902)
-
-
-Started GET "/users/sign_up" for ::1 at 2021-10-31 16:19:48 +0200
-Processing by RegistrationsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 118)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 79.7ms | Allocations: 9978)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 379.8ms | Allocations: 17253)
-Completed 200 OK in 407ms (Views: 404.6ms | ActiveRecord: 0.0ms | Allocations: 19332)
-
-
-Started POST "/users" for ::1 at 2021-10-31 16:20:03 +0200
-Processing by RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"sayed", "email"=>"elarabyelaidy@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists? (1.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elarabyelaidy@gmail.com"], ["LIMIT", 1]]
-  [1m[36mTRANSACTION (1.3ms)[0m  [1m[31mROLLBACK[0m
-  Rendering layout layouts/application.html.erb
-  Rendering devise/registrations/new.html.erb within layouts/application
-  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 72)
-  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 23.5ms | Allocations: 9976)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered layout layouts/application.html.erb (Duration: 246.2ms | Allocations: 17251)
-Completed 200 OK in 614ms (Views: 248.1ms | ActiveRecord: 4.8ms | Allocations: 24382)
-
-
-Started POST "/users" for ::1 at 2021-10-31 16:20:25 +0200
-Processing by RegistrationsController#create as HTML
-  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"sayed", "email"=>"elarabymahmoud2043@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
-  [1m[36mTRANSACTION (1.7ms)[0m  [1m[35mBEGIN[0m
-  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "elarabymahmoud2043@gmail.com"], ["LIMIT", 1]]
-  [1m[36mUser Create (3.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "elarabymahmoud2043@gmail.com"], ["encrypted_password", "$2a$12$pVSxd7TcashKPm1tznGEZ.jSClxZ.RZ7UfGuA6AOAEAxIA2h//SfO"], ["created_at", "2021-10-31 14:20:26.048674"], ["updated_at", "2021-10-31 14:20:26.048674"], ["name", "sayed"]]
-  [1m[36mTRANSACTION (22.5ms)[0m  [1m[35mCOMMIT[0m
-Redirected to http://localhost:3000/
-Completed 302 Found in 355ms (ActiveRecord: 28.8ms | Allocations: 6484)
-
-
-Started GET "/" for ::1 at 2021-10-31 16:20:26 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.7ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 877)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 211.6ms | Allocations: 9255)
-Completed 200 OK in 216ms (Views: 210.6ms | ActiveRecord: 3.2ms | Allocations: 9746)
-
-
-Started GET "/" for ::1 at 2021-10-31 16:20:32 +0200
-Processing by ShotsController#index as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/index.html.erb within layouts/application
-  [1m[36mShot Load (1.7ms)[0m  [1m[34mSELECT "shots".* FROM "shots"[0m
-  ↳ app/views/shots/index.html.erb:15
-  Rendered shots/index.html.erb within layouts/application (Duration: 7.2ms | Allocations: 878)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 234.4ms | Allocations: 9059)
-Completed 200 OK in 239ms (Views: 234.1ms | ActiveRecord: 3.3ms | Allocations: 9540)
-
-
-Started GET "/shots/new" for ::1 at 2021-10-31 16:20:35 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 4.3ms | Allocations: 1411)
-  Rendered shots/new.html.erb within layouts/application (Duration: 18.3ms | Allocations: 1729)
-  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 1831)
-Completed 500 Internal Server Error in 30ms (ActiveRecord: 0.0ms | Allocations: 2401)
-
-
-
-ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <%= simple_form_for @shot, html: { multipart: true }  do |f| %>
-  <%= f.error_notification %>
-  <div class="columns is-centered">
-    <div class="column is-half">
-    <% #unless @shot.user_shot.blank? %>
-    <%= #image_tag (@shot.user_shot_url), id: "previewImage" %>
-    <% #end %>
-    <output id="list"></output>
-    <div id="drop_zone">Drag your shot here</div>
-    <br />
-    <%= #f.input :user_shot, label: false, input_html: { class: "file-input", type: "file" }, wrapper: false, label_html: { class: "file-label" } %>
-    <div class="field">
-      <div class="control">
-      	<%= f.input :title, label: "Title", input_html: { class: "input"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.input :description, input_html: { class: "textarea"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.button :submit, class:"button is-primary" %>
-      </div>
-    </div>
-  </div>
-</div>
-<% end %>:
-  app/views/shots/new.html.erb:4
-
-Started POST "/__better_errors/76fe3aef2ec00bde/variables" for ::1 at 2021-10-31 16:20:35 +0200
-Started GET "/shots/new" for ::1 at 2021-10-31 16:21:32 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 42.6ms | Allocations: 3713)
-  Rendered shots/new.html.erb within layouts/application (Duration: 43.8ms | Allocations: 3809)
-  Rendered layout layouts/application.html.erb (Duration: 45.6ms | Allocations: 3910)
-Completed 500 Internal Server Error in 50ms (ActiveRecord: 0.0ms | Allocations: 4361)
-
-
-
-NoMethodError - undefined method `user_shot' for #<Shot id: nil, title: nil, description: nil, user_id: nil, created_at: nil, updated_at: nil>
-Did you mean?  user_id:
-  app/views/shots/_form.html.erb:6
-  app/views/shots/_form.html.erb:1
-  app/views/shots/new.html.erb:4
-
-Started POST "/__better_errors/2c9379663b67a0b3/variables" for ::1 at 2021-10-31 16:21:33 +0200
-Started GET "/shots/new" for ::1 at 2021-10-31 16:23:12 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 21.0ms | Allocations: 3262)
-  Rendered shots/new.html.erb within layouts/application (Duration: 22.5ms | Allocations: 3356)
-  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 3457)
-Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms | Allocations: 3904)
-
-
-
-NoMethodError - undefined method `user_shot' for #<Shot id: nil, title: nil, description: nil, user_id: nil, created_at: nil, updated_at: nil>
-Did you mean?  user_id:
-  app/views/shots/_form.html.erb:6
-  app/views/shots/_form.html.erb:1
-  app/views/shots/new.html.erb:4
-
-Started POST "/__better_errors/92df53f651d0807e/variables" for ::1 at 2021-10-31 16:23:13 +0200
-Started GET "/shots/new" for ::1 at 2021-10-31 16:23:18 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 9.0ms | Allocations: 3262)
-  Rendered shots/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 3356)
-  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 3457)
-Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms | Allocations: 3904)
-
-
-
-NoMethodError - undefined method `user_shot' for #<Shot id: nil, title: nil, description: nil, user_id: nil, created_at: nil, updated_at: nil>
-Did you mean?  user_id:
-  app/views/shots/_form.html.erb:6
-  app/views/shots/_form.html.erb:1
-  app/views/shots/new.html.erb:4
-
-Started POST "/__better_errors/14802f91a409ea97/variables" for ::1 at 2021-10-31 16:23:18 +0200
-Started GET "/shots/new" for ::1 at 2021-10-31 16:23:58 +0200
-  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 16.0ms | Allocations: 1734)
-  Rendered shots/new.html.erb within layouts/application (Duration: 41.3ms | Allocations: 2255)
-  Rendered layout layouts/application.html.erb (Duration: 42.9ms | Allocations: 2371)
-Completed 500 Internal Server Error in 177ms (ActiveRecord: 9.1ms | Allocations: 9577)
-
-
-
-ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <%= simple_form_for @shot, html: { multipart: true }  do |f| %>
-  <%= f.error_notification %>
-  <div class="columns is-centered">
-    <div class="column is-half">
-    <% #unless @shot.user_shot.blank? %>
-    <%= #image_tag (@shot.user_shot_url), id: "previewImage" %>
-    <% #end %>
-    <output id="list"></output>
-    <div id="drop_zone">Drag your shot here</div>
-    <br />
-    <%= #f.input :user_shot, label: false, input_html: { class: "file-input", type: "file" }, wrapper: false, label_html: { class: "file-label" } %>
-    <div class="field">
-      <div class="control">
-      	<%= f.input :title, label: "Title", input_html: { class: "input"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.input :description, input_html: { class: "textarea"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.button :submit, class:"button is-primary" %>
-      </div>
-    </div>
-  </div>
-</div>
-<% end %>:
-  app/views/shots/new.html.erb:4
-
-Started POST "/__better_errors/28dd77037417988d/variables" for ::1 at 2021-10-31 16:24:00 +0200
-Started GET "/shots/new" for ::1 at 2021-10-31 16:25:54 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 43.0ms | Allocations: 1397)
-  Rendered shots/new.html.erb within layouts/application (Duration: 44.2ms | Allocations: 1491)
-  Rendered layout layouts/application.html.erb (Duration: 46.0ms | Allocations: 1593)
-Completed 500 Internal Server Error in 52ms (ActiveRecord: 0.0ms | Allocations: 2043)
-
-
-
-ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <%= simple_form_for @shot, html: { multipart: true }  do |f| %>
-  <%= f.error_notification %>
-  <div class="columns is-centered">
-    <div class="column is-half">
-    <% #unless @shot.user_shot.blank? %>
-    <%= #image_tag (@shot.user_shot_url), id: "previewImage" %>
-    <% #end %>
-    <output id="list"></output>
-    <div id="drop_zone">Drag your shot here</div>
-    <br />
-    <%= f.input :user_shot, label: false, input_html: { class: "file-input", type: "file" }, wrapper: false, label_html: { class: "file-label" } %>
-    <div class="field">
-      <div class="control">
-      	<%= f.input :title, label: "Title", input_html: { class: "input"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.input :description, input_html: { class: "textarea"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.button :submit, class:"button is-primary" %>
-      </div>
-    </div>
-  </div>
-</div>
-<% end %>:
-  app/views/shots/new.html.erb:4
-
-Started POST "/__better_errors/abb917609cc8d921/variables" for ::1 at 2021-10-31 16:25:55 +0200
-Started GET "/shots/new" for ::1 at 2021-10-31 16:26:50 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 6.0ms | Allocations: 1396)
-  Rendered shots/new.html.erb within layouts/application (Duration: 7.2ms | Allocations: 1490)
-  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 1593)
-Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 2051)
-
-
-
-ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <%= simple_form_for @shot, html: { multipart: true }  do |f| %>
-  <%= f.error_notification %>
-  <div class="columns is-centered">
-    <div class="column is-half">
-    <% #unless @shot.user_shot.blank? %>
-    <%= #image_tag (@shot.user_shot_url), id: "previewImage" %>
-    <% #end %>
-    <output id="list"></output>
-    <div id="drop_zone">Drag your shot here</div>
-    <br />
-    <%= f.input :user_shot, label: false, input_html: { class: "file-input", type: "file" }, wrapper: false, label_html: { class: "file-label" } %>
-    <div class="field">
-      <div class="control">
-      	<%= f.input :title, label: "Title", input_html: { class: "input"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.input :description, input_html: { class: "textarea"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.button :submit, class:"button is-primary" %>
-      </div>
-    </div>
-  </div>
-</div>
-<% end %>:
-  app/views/shots/new.html.erb:4
-
-Started POST "/__better_errors/637384f04da8d4a5/variables" for ::1 at 2021-10-31 16:26:51 +0200
-Started GET "/shots/new" for ::1 at 2021-10-31 16:27:31 +0200
-  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 14.6ms | Allocations: 1734)
-  Rendered shots/new.html.erb within layouts/application (Duration: 38.9ms | Allocations: 2254)
-  Rendered layout layouts/application.html.erb (Duration: 41.9ms | Allocations: 2370)
-Completed 500 Internal Server Error in 151ms (ActiveRecord: 5.8ms | Allocations: 9574)
-
-
-
-ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <%= simple_form_for @shot, html: { multipart: true }  do |f| %>
-  <%= f.error_notification %>
-  <div class="columns is-centered">
-    <div class="column is-half">
-    <% #unless @shot.user_shot.blank? %>
-    <%= #image_tag (@shot.user_shot_url), id: "previewImage" %>
-    <% #end %>
-    <output id="list"></output>
-    <div id="drop_zone">Drag your shot here</div>
-    <br />
-    <%= f.input :user_shot, label: false, input_html: { class: "file-input", type: "file" }, wrapper: false, label_html: { class: "file-label" } %>
-    <div class="field">
-      <div class="control">
-      	<%= f.input :title, label: "Title", input_html: { class: "input"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.input :description, input_html: { class: "textarea"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.button :submit, class:"button is-primary" %>
-      </div>
-    </div>
-  </div>
-</div>
-<% end %>:
-  app/views/shots/new.html.erb:4
-
-Started POST "/__better_errors/1bb086cdc4d7020e/variables" for ::1 at 2021-10-31 16:27:32 +0200
-Started GET "/shots/new" for ::1 at 2021-10-31 16:28:21 +0200
-  [1m[35m (1.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 13.8ms | Allocations: 1734)
-  Rendered shots/new.html.erb within layouts/application (Duration: 35.0ms | Allocations: 2254)
-  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 2370)
-Completed 500 Internal Server Error in 137ms (ActiveRecord: 7.5ms | Allocations: 9574)
-
-
-
-ActionView::SyntaxErrorInTemplate - Encountered a syntax error while rendering template: check <%= simple_form_for @shot, html: { multipart: true }  do |f| %>
-  <%= f.error_notification %>
-  <div class="columns is-centered">
-    <div class="column is-half">
-    <% #unless @shot.user_shot.blank? %>
-    <%= #image_tag (@shot.user_shot_url), id: "previewImage" %>
-    <% #end %>
-    <output id="list"></output>
-    <div id="drop_zone">Drag your shot here</div>
-    <br />
-    <%= #f.input :user_shot, label: false, input_html: { class: "file-input", type: "file" }, wrapper: false, label_html: { class: "file-label" } %>
-    <div class="field">
-      <div class="control">
-      	<%= f.input :title, label: "Title", input_html: { class: "input"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.input :description, input_html: { class: "textarea"}, wrapper: false, label_html: { class: "label" } %>
-      </div>
-    </div>
-    <div class="field">
-    	<div class="control">
-      	<%= f.button :submit, class:"button is-primary" %>
-      </div>
-    </div>
-  </div>
-</div>
-<% end %>:
-  app/views/shots/new.html.erb:4
-
-Started POST "/__better_errors/99ea17e2e0b047e4/variables" for ::1 at 2021-10-31 16:28:22 +0200
-Started GET "/shots/new" for ::1 at 2021-10-31 16:28:55 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 330.8ms | Allocations: 11790)
-  Rendered shots/new.html.erb within layouts/application (Duration: 332.1ms | Allocations: 11886)
-  Rendered layout layouts/application.html.erb (Duration: 335.3ms | Allocations: 11987)
-Completed 500 Internal Server Error in 341ms (ActiveRecord: 0.0ms | Allocations: 12440)
-
-
-
-NoMethodError - undefined method `user_shot' for #<Shot id: nil, title: nil, description: nil, user_id: nil, created_at: nil, updated_at: nil>
-Did you mean?  user_id:
-  app/views/shots/_form.html.erb:6
-  app/views/shots/_form.html.erb:1
-  app/views/shots/new.html.erb:4
-
-Started POST "/__better_errors/2ac6d466d48d97cd/variables" for ::1 at 2021-10-31 16:28:56 +0200
-Started GET "/shots/new" for ::1 at 2021-10-31 16:29:33 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 187.3ms | Allocations: 10779)
-  Rendered shots/new.html.erb within layouts/application (Duration: 201.7ms | Allocations: 11097)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 2086.9ms | Allocations: 33862)
-Completed 200 OK in 2114ms (Views: 2092.1ms | ActiveRecord: 10.8ms | Allocations: 35230)
-
-
-  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7657400728614422310)[0m
-  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Migrating to AddUserShotToShot (20211031145118)
-  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
-  [1m[35m (5.2ms)[0m  [1m[35mALTER TABLE "shots" ADD "user_shot" character varying[0m
-  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211031145118"]]
-  [1m[36mTRANSACTION (47.7ms)[0m  [1m[35mCOMMIT[0m
-  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
-  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(7657400728614422310)[0m
-  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Started GET "/shots/new" for ::1 at 2021-10-31 16:56:05 +0200
-  [1m[35m (1.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
-Processing by ShotsController#new as HTML
-Completed 500 Internal Server Error in 118ms (ActiveRecord: 0.0ms | Allocations: 2808)
-
-
-
-SyntaxError - syntax error, unexpected end-of-input, expecting `end':
-  app/uploaders/user_shot_uploader.rb:50:in `'
-  app/models/shot.rb:2:in `<class:Shot>'
-  app/models/shot.rb:1:in `<main>'
-  app/controllers/shots_controller.rb:15:in `new'
-
-Started POST "/__better_errors/59c38046f34c6ae5/variables" for ::1 at 2021-10-31 16:56:06 +0200
-Started GET "/shots/new" for ::1 at 2021-10-31 16:56:50 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 362.7ms | Allocations: 17590)
-  Rendered shots/new.html.erb within layouts/application (Duration: 380.9ms | Allocations: 18100)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 2122.8ms | Allocations: 40701)
-Completed 200 OK in 2523ms (Views: 2140.2ms | ActiveRecord: 18.8ms | Allocations: 52457)
-
-
-Started GET "/shots/new" for ::1 at 2021-10-31 16:58:31 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 45.8ms | Allocations: 8604)
-  Rendered shots/new.html.erb within layouts/application (Duration: 48.3ms | Allocations: 8700)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 357.7ms | Allocations: 21513)
-Completed 200 OK in 410ms (Views: 352.0ms | ActiveRecord: 16.5ms | Allocations: 27345)
-
-
-Started GET "/shots/new" for ::1 at 2021-10-31 17:28:16 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 52.6ms | Allocations: 8895)
-[Webpacker] Compiling...
-[Webpacker] Compiled all packs in /mnt/f/github/dribbble/public/packs
-[Webpacker] Hash: c8474d89f4b78558ecbf
-Version: webpack 4.46.0
-Time: 37546ms
-Built at: 10/31/2021 5:29:29 PM
-                                     Asset       Size       Chunks                         Chunk Names
-    js/application-e421b4aa3f716bebdab1.js    125 KiB  application  [emitted] [immutable]  application
-js/application-e421b4aa3f716bebdab1.js.map    139 KiB  application  [emitted] [dev]        application
-          js/shots-c226bc1d98b95788a7d9.js   7.27 KiB        shots  [emitted] [immutable]  shots
-      js/shots-c226bc1d98b95788a7d9.js.map   7.76 KiB        shots  [emitted] [dev]        shots
-                             manifest.json  661 bytes               [emitted]              
-Entrypoint application = js/application-e421b4aa3f716bebdab1.js js/application-e421b4aa3f716bebdab1.js.map
-Entrypoint shots = js/shots-c226bc1d98b95788a7d9.js js/shots-c226bc1d98b95788a7d9.js.map
-[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
-[./app/javascript/channels/index.js] 211 bytes {application} [built]
-[./app/javascript/packs/application.js] 492 bytes {application} [built]
-[./app/javascript/packs/shots.js] 3.41 KiB {shots} [built]
-[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
-    + 3 hidden modules
-
-  Rendered shots/new.html.erb within layouts/application (Duration: 72342.9ms | Allocations: 12241)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 72644.4ms | Allocations: 25170)
-Completed 200 OK in 72740ms (Views: 72670.2ms | ActiveRecord: 15.7ms | Allocations: 34033)
-
-
-Started GET "/shots/new" for ::1 at 2021-10-31 17:33:24 +0200
-Processing by ShotsController#new as HTML
-  Rendering layout layouts/application.html.erb
-  Rendering shots/new.html.erb within layouts/application
-  Rendered shots/_form.html.erb (Duration: 21.8ms | Allocations: 8267)
-[Webpacker] Everything's up-to-date. Nothing to do
-  Rendered shots/new.html.erb within layouts/application (Duration: 112.6ms | Allocations: 9819)
-[Webpacker] Everything's up-to-date. Nothing to do
-  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 8], ["LIMIT", 1]]
-  ↳ app/views/layouts/application.html.erb:53
-  Rendered layout layouts/application.html.erb (Duration: 359.2ms | Allocations: 18083)
-Completed 200 OK in 364ms (Views: 359.7ms | ActiveRecord: 1.7ms | Allocations: 18577)
+  [1m[36mShot Load (1.8ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (214.4ms)
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 200 OK in 2770ms (Views: 2469.9ms | ActiveRecord: 21.2ms)
+
+
+Started GET "/shots/6" for ::1 at 2021-11-02 12:25:50 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShot Load (10.0ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  [1m[36mUser Load (3.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (7.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shots/show.html.erb within layouts/application (46.9ms)
+Completed 200 OK in 1084ms (Views: 886.4ms | ActiveRecord: 21.0ms)
 
 
