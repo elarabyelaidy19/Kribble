@@ -40,5 +40,13 @@
 
 * customize shots views
     * shots.scss 
-    * application.scss
+    * application.scss 
+
+* create comments  
+    * controller and model 
+    * associatons between User/shots comments  
+    * nested resource for commnets 
+    * view for commnets in shot/show view 
+    * form partial for comments 
+    * 
     

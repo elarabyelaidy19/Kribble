@@ -28,9 +28,25 @@
 						</div>
 					<% end %> 
 
-          <div class="content">
+          			<div class="content">
 						<%= @shot.description %>
-					</div> 
+					</div>  
+
+					<section class="comments"> 
+						<h2 class="subtitle is-5"><%=pluralize(@shot.comments.count, 'Comment')%></h2>  
+						
+						<%= render @shot.comments %> 
+						<hr/> 
+
+						<% if user_signed_in? %> 
+							<div class="comment-form"> 
+								<h3 class="subtitle is-3">Leave Reply</h3> 
+								<%= render "comments/form" %>
+							</div> 
+						<% else %> 
+							<div class="content"><%= link_to 'sign in', new_user_session_path%>To leave a comment</div>
+						<%end%>
+					</section>
           
 				</div>
 			</div>
