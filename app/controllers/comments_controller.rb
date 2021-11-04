@@ -1,10 +1,12 @@
 class CommentsController < ApplicationController
+
+  before_action :authenticate_user!, only: [:create, :destroy]
   def create 
     @shot = Shot.find(params[:shot_id]) 
     @comment = @shot.comments.create(comment_params) 
     @comment.user_id = current_user.id if current_user 
     
-    comment.save! 
+    @comment.save! 
 
     redirect_to shot_path(@shot) 
   end

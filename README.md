@@ -48,5 +48,5 @@
     * nested resource for commnets 
     * view for commnets in shot/show view 
     * form partial for comments 
-    * 
+    * Comment partial 
     

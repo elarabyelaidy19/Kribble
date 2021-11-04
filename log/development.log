@@ -958,3 +958,287 @@ Migrating to AddShotIdToComments (20211104071809)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 [0m
+Started POST "/users" for ::1 at 2021-11-04 09:34:47 +0200
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IJfwDKUDLryxq/7U0Y0uGsSBqjgHN38kfw9nE9FFBYqrONnQaTM9oBhStpoMaKgQ7BftRjbkLyYE5ps2gHoy8Q==", "user"=>{"name"=>"Elaraby Elaidy", "email"=>"eeee@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (2.9ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eeee@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.6ms)[0m  [1m[31mrollback transaction[0m
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (194.4ms)
+Completed 200 OK in 7452ms (Views: 6766.9ms | ActiveRecord: 14.5ms)
+
+
+Started POST "/users" for ::1 at 2021-11-04 09:35:21 +0200
+Processing by RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4PYBTIVi8OPnaoOaMmc5c2bsVZaLxA+XnE9VNCffhGd6COEeXS14XNSnZ2cOFvKO73g5oAjhZBWPGd624HeTvQ==", "user"=>{"name"=>"Elaraby Elaidy", "email"=>"eeee@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists (2.6ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "eeee@gmail.com"], ["LIMIT", 1]]
+  [1m[35mSQL (8.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "name") VALUES (?, ?, ?, ?, ?)[0m  [["email", "eeee@gmail.com"], ["encrypted_password", "$2a$12$ZaFkUe7Xl.gXEP54p0QDnO3Lf9BTfqxZFnbDFrGc/w9pwbUgBx0iu"], ["created_at", "2021-11-04 07:35:21.350616"], ["updated_at", "2021-11-04 07:35:21.350616"], ["name", "Elaraby Elaidy"]]
+  [1m[35m (138.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 717ms (ActiveRecord: 149.1ms)
+
+
+Started GET "/" for ::1 at 2021-11-04 09:35:21 +0200
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (3.4ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (57.6ms)
+  [1m[36mUser Load (2.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 823ms (Views: 599.0ms | ActiveRecord: 16.4ms)
+
+
+Started GET "/shots/6" for ::1 at 2021-11-04 09:35:31 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShot Load (3.6ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendered shots/show.html.erb within layouts/application (27.7ms)
+Completed 200 OK in 742ms (Views: 615.4ms | ActiveRecord: 7.7ms)
+
+
+Started GET "/shots/6" for ::1 at 2021-11-04 09:38:32 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShot Load (2.4ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  Rendered shots/show.html.erb within layouts/application (226.4ms)
+Completed 200 OK in 1068ms (Views: 952.3ms | ActiveRecord: 12.2ms)
+
+
+Started GET "/shots/6" for ::1 at 2021-11-04 09:52:29 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShot Load (2.1ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  [1m[36mComment Load (1.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (1.3ms)
+  Rendered shots/show.html.erb within layouts/application (108.1ms)
+Completed 200 OK in 808ms (Views: 695.2ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/shots/6" for ::1 at 2021-11-04 10:04:22 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShot Load (3.0ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (178.6ms)
+  Rendered shots/show.html.erb within layouts/application (294.9ms)
+Completed 500 Internal Server Error in 590ms (ActiveRecord: 16.6ms)
+
+
+
+ActiveModel::MissingAttributeError - can't write unknown attribute `builder`:
+  app/views/comments/_form.html.erb:1:in `_app_views_comments__form_html_erb___190299204859721366_69890628236700'
+  app/views/shots/show.html.erb:44:in `_app_views_shots_show_html_erb__1134756674121748365_69890628132380'
+
+Started POST "/__better_errors/3aa5d36a2c79466b/variables" for ::1 at 2021-11-04 10:04:23 +0200
+Started GET "/shots/6" for ::1 at 2021-11-04 10:04:59 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShot Load (3.7ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  [1m[36mComment Load (2.9ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (130.0ms)
+  Rendered shots/show.html.erb within layouts/application (283.3ms)
+Completed 200 OK in 1209ms (Views: 969.8ms | ActiveRecord: 14.6ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2021-11-04 10:05:30 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8wV2LvXZpLW9i2oihSQmaIPiYIi2J4pY80d7898Nwrtp+5Z8LZYsCo5Gjt+5Ve2VCnYMvjUC4drgEfBxGKXVYQ=="}
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 71ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2021-11-04 10:05:30 +0200
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (2.0ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 731ms (Views: 633.6ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-04 10:05:35 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (173.4ms)
+Completed 200 OK in 897ms (Views: 894.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2021-11-04 10:05:40 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6W8Rh5lUHEz3LoJ20DZUMhj49ZcgncqaFwIOHDQaQ8YRJWG2KgUmN3E+Lw+aiDnxiW/pQw/hFH/IW0S7341cdw==", "user"=>{"email"=>"eeee@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "eeee@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 624ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/" for ::1 at 2021-11-04 10:05:41 +0200
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (2.0ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (10.0ms)
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 635ms (Views: 525.4ms | ActiveRecord: 5.8ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2021-11-04 10:05:47 +0200
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"b0lsvDPUUISsLEyt3hFxv/oVLOidTwI5BWUm5uF9J3I+VGLw2SwggYt6/wFn1BOJhFNHi5bXilj8gtyZyb/Mfg=="}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/" for ::1 at 2021-11-04 10:05:47 +0200
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (2.3ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (2.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 701ms (Views: 612.5ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/shots/6" for ::1 at 2021-11-04 10:05:50 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShot Load (2.1ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  [1m[36mUser Load (2.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  [1m[36mComment Load (2.0ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered shots/show.html.erb within layouts/application (28.3ms)
+Completed 200 OK in 694ms (Views: 583.7ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/shots/6" for ::1 at 2021-11-04 10:06:47 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShot Load (2.6ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  [1m[36mUser Load (2.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (5.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  [1m[36mComment Load (2.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered shots/show.html.erb within layouts/application (41.9ms)
+Completed 200 OK in 702ms (Views: 544.4ms | ActiveRecord: 12.8ms)
+
+
+Started GET "/shots/6" for ::1 at 2021-11-04 10:26:57 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShot Load (2.8ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  [1m[36mUser Load (2.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  [1m[36mComment Load (2.8ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered shots/show.html.erb within layouts/application (33.7ms)
+Completed 200 OK in 733ms (Views: 590.6ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2021-11-04 10:27:00 +0200
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (1.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (220.6ms)
+Completed 200 OK in 1034ms (Views: 1032.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2021-11-04 10:27:02 +0200
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZHQHqNpIU4gHyJhcV/BzxEVY/s9ALtBWUEVPTOuzvGOOVfbA/7fAh9CjODw15Caeuv2Tn6QvJO3vVQR5/u0vEw==", "user"=>{"email"=>"eeee@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (2.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "eeee@gmail.com"], ["LIMIT", 1]]
+Redirected to http://localhost:3000/
+Completed 302 Found in 514ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/" for ::1 at 2021-11-04 10:27:03 +0200
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  [1m[36mShot Load (2.3ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendered shots/index.html.erb within layouts/application (14.0ms)
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 640ms (Views: 545.2ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/shots/6" for ::1 at 2021-11-04 10:27:07 +0200
+Processing by ShotsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mShot Load (1.8ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering shots/show.html.erb within layouts/application
+  [1m[36mUser Load (3.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mUser Load (2.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  [1m[36mComment Load (2.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."shot_id" = ?[0m  [["shot_id", 6]]
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered comments/_form.html.erb (115.3ms)
+  Rendered shots/show.html.erb within layouts/application (240.2ms)
+Completed 200 OK in 945ms (Views: 841.5ms | ActiveRecord: 11.9ms)
+
+
+Started POST "/shots/6/comments" for ::1 at 2021-11-04 10:27:24 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VK2XcWkAl9czm1/iiGEDk5rKpFqcpmsV7IFpKaySvsI/ePLNwjogOhwN2FBWlYDn2zRF3uVFiI19FuJkjnJPhw==", "comment"=>{"name"=>"elaraby elaidy", "response"=>"this is comment"}, "commit"=>"Leave a replay", "shot_id"=>"6"}
+  [1m[36mUser Load (1.9ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mShot Load (2.2ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 402ms (ActiveRecord: 4.7ms)
+
+
+
+NameError - undefined local variable or method `comment' for #<CommentsController:0x00007f215086b0c8>
+Did you mean?  @comment:
+  app/controllers/comments_controller.rb:9:in `create'
+
+Started POST "/__better_errors/23890244244115a8/variables" for ::1 at 2021-11-04 10:27:25 +0200
+Started POST "/shots/6/comments" for ::1 at 2021-11-04 10:27:48 +0200
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VK2XcWkAl9czm1/iiGEDk5rKpFqcpmsV7IFpKaySvsI/ePLNwjogOhwN2FBWlYDn2zRF3uVFiI19FuJkjnJPhw==", "comment"=>{"name"=>"elaraby elaidy", "response"=>"this is comment"}, "commit"=>"Leave a replay", "shot_id"=>"6"}
+  [1m[36mUser Load (3.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mShot Load (3.0ms)[0m  [1m[34mSELECT  "shots".* FROM "shots" WHERE "shots"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 370ms (ActiveRecord: 6.5ms)
+
+
+
+NameError - undefined local variable or method `comment' for #<CommentsController:0x000055969afb7260>
+Did you mean?  @comment:
+  app/controllers/comments_controller.rb:9:in `create'
+
+Started POST "/__better_errors/a9c7c1d5e9914882/variables" for ::1 at 2021-11-04 10:27:49 +0200
