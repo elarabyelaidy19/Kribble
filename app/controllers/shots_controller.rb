@@ -1,6 +1,7 @@
 class ShotsController < ApplicationController
-  before_action :set_shot, only: %i[ show edit update destroy ]
-  before_action :authenticate_user!, only: [:edit, :update, :destroy]
+  before_action :set_shot, only: [:show, :edit, :update, :destroy, :like, :unlike]
+  before_action :authenticate_user!, only: [:edit, :update, :destroy, :like, :unlike]
+  impressionist actions: [:show], unique: [:impressionable_type, :impressionable_id, :session_hash]
   # GET /shots or /shots.json
   def index
     @shots = Shot.all.order('created_at DESC')
@@ -31,6 +32,22 @@ class ShotsController < ApplicationController
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @shot.errors, status: :unprocessable_entity }
       end
+    end
+  end
+
+  def like
+    @shot.liked_by current_user
+    respond_to do |format|
+      format.html { redirect_back fallback_location: root_path }
+      format.json { render layout:false }
+    end
+  end
+
+  def unlike
+    @shot.unliked_by current_user
+    respond_to do |format|
+      format.html { redirect_back fallback_location: root_path }
+      format.json { render layout:false }
     end
   end
 

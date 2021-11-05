@@ -49,4 +49,17 @@
     * view for commnets in shot/show view 
     * form partial for comments 
     * Comment partial 
-    
+* imperisont gem for analytics  
+    * rails g impressionist
+    * shot model is_impressionable 
+    * shot controller impressionists 
+    * view 
+* acts as votable 
+    * rails generate acts_as_votable:migration 
+    * shot acts_as_votable 
+    * user acts_as_voter 
+    * controller actions like/unlike 
+    * Authem=nticate user on like/unlike 
+    * index view for like/unlike  
+    * member route for like/unlike 
+    * show view 
