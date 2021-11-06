@@ -11,7 +11,7 @@ An Unregistered user can only view shits made by all registered users.
 
 ### Screenshot
 
-![kribble](screens/home.png)
+![kribble](screens/home.PNG)
 
 
 ## Built With
