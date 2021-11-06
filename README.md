@@ -1,7 +1,4 @@
 # Kribble
-
-![Linters](https://github.com/elarabyelaidy19/kribble/workflows/Linters/badge.svg)
-
 ## Project Description
 
 This project involves the building of a light weight version of [dribble](https://dribbble.com/) demonstrating the concepts of Authentication and Authorization in ruby on rails and getting familiar with using the Devise gem in the process and be able to use some ruby gems to mimic some functionality as number of view on each shit, like/unlike shits
@@ -9,9 +6,9 @@ This project involves the building of a light weight version of [dribble](https:
 A user is able to sign-up and sign-in, create, edit, and delete their shits/comments, view shits/comments made by all users.  A user **can not** edit or delete a shit created by another user also **can not** Unlike other users Likes.
 An Unregistered user can only view shits made by all registered users.
 
-### Screenshot
+### Screenshots
 
-![kribble](screens/home.PNG)
+![](screens/home.png)
 
 
 ## Built With
@@ -57,20 +54,20 @@ An Unregistered user can only view shits made by all registered users.
 
 2.  If you have a solution to that, and you are willing to work on it, follow the below steps to contribute:
     1.  Fork this repository
-    1.  Clone it on your local computer by running `git clone git@github.com:RNtaate/twitter_clone.git` __Replace *RNtaate* with the username you use on github__
+    1.  Clone it on your local computer by running `git clone https://github.com/elarabyelaidy19/Kribble.git` 
     1.  Open the cloned repository which appears as a folder on your local computer with your favorite code editor
     1.  Create a separate branch off the *master branch*,
     1.  Write your codes which fix the issue you found
     1.  Commit and push the branch you created
-    1.  Raise a pull request, comparing your new created branch with our original master branch [here](https://github.com/RNtaate/twitter_clone)
+    1.  Raise a pull request, comparing your new created branch with our original master branch [here](https://github.com/elarabyelaidy19/Kribble.git)
 
 ## Authors
 
-👤 **Roy Ntaate**
+👤 **Elaraby Elaidy**
 
-- Github: [@RNtaate](https://github.com/RNtaate)
-- Twitter: [@RNtaate](https://twitter.com/RNtaate)
-- Linkedin: [roy-ntaate](https://linkedin.com/in/roy-ntaate)
+- Github: [@elarabyelaidy](https://github.com/elarabyelaidy19)
+- Twitter: [@elarabyelaidy](https://twitter.com/elarabyelaidy)
+- Linkedin: [elarabyelaidy](https://linkedin.com/in/elarabyelaidy)
 
 
 ## Show your support
@@ -78,5 +75,4 @@ An Unregistered user can only view shits made by all registered users.
 Give a ⭐️ if you like this project!
 
 ## Acknowledgments
-- This project was originally taken from [the Odin project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication), following the screen cast tutorials of "*__Project 1__*" made by [Andy Leverenz](https://github.com/justalever/twittter)
-- This project was inspired by the [Microverse](https:www.microverse.org) program
+- This project was built following the screen cast tutorials of "*__Project 3__*" made by [Andy Leverenz](https://github.com/justalever)
