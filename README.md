@@ -8,9 +8,10 @@ This project involves the building of a light weight version of [dribble](https:
 
 A user is able to sign-up and sign-in, create, edit, and delete their shits/comments, view shits/comments made by all users.  A user **can not** edit or delete a shit created by another user also **can not** Unlike other users Likes.
 An Unregistered user can only view shits made by all registered users.
+
 ### Screenshot
 
-![](screens/home.png)
+![kribble](screens/home.png)
 
 
 ## Built With
