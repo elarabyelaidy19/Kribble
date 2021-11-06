@@ -4,11 +4,11 @@
     <div class="column is-half">
     
     <% unless @shot.user_shot.blank? %>
-    <%= image_tag (@shot.user_shot_url), id: "previewImage" %>
+      <%= image_tag (@shot.user_shot_url), id: "previewImage" %>
     <% end %>
 
     <output id="list"></output>
-    <div id="drop_zone">Drag your shot here</div>
+    <div id="drop_zone">Drag your shit here</div>
     <br />
 
     <%= f.input :user_shot, label: false, input_html: { class: "file-input", type: "file" }, wrapper: false, label_html: { class: "file-label" } %>

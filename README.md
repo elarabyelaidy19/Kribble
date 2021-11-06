@@ -1,3 +1,5 @@
+
+
 # LOG
 * guard init livereload   
 * import "pulma"
@@ -5,7 +7,7 @@
     * rails g devise:install 
     * add alert, notice /layout/application 
     * rails g controller home 
-    * rails g views
+    * rails g devise:views
     * create devise model_devise(user) 
         * rails g devise User   
     * create custom controller that extends from devise  
@@ -25,7 +27,7 @@
     * update application style with pulma 
 
 * Customize shots view 
-    * update new, edit, _form
+    * index, new, edit, _form
 
 * CarrierWave Uploader 
     * rails g uploader user_shot(file name) 

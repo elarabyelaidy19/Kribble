@@ -26,7 +26,7 @@ class ShotsController < ApplicationController
 
     respond_to do |format|
       if @shot.save
-        format.html { redirect_to @shot, notice: "Shot was successfully created." }
+        format.html { redirect_to @shot, notice: "Shit was successfully created." }
         format.json { render :show, status: :created, location: @shot }
       else
         format.html { render :new, status: :unprocessable_entity }
