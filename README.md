@@ -24,7 +24,7 @@ An Unregistered user can only view shits made by all registered users.
 - Mini-magick (for maniuplate images) 
 - Impressionist (Log views from controller actions or from model) 
 - acts_as_votable (Allowing records to be votable) 
-- 
+- Figaro (app config usin ENV and single YAML file)
 ## How to run this project on your local machine
 
 ### Prerequisites

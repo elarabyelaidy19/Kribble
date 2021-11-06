@@ -7694,3 +7694,145 @@ Completed 200 OK in 4342ms (Views: 3880.7ms | ActiveRecord: 144.9ms)
 Completed 200 OK in 2700ms (Views: 2320.7ms | ActiveRecord: 88.5ms)
 
 
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments" CASCADE[0m
+  [1m[35m (237.0ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "response" text, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer, "shot_id" integer)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "impressions" CASCADE[0m
+  [1m[35m (189.2ms)[0m  [1m[35mCREATE TABLE "impressions" ("id" bigserial primary key, "impressionable_type" character varying, "impressionable_id" integer, "user_id" integer, "controller_name" character varying, "action_name" character varying, "view_name" character varying, "request_hash" character varying, "ip_address" character varying, "session_hash" character varying, "message" text, "referrer" text, "params" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (89.6ms)[0m  [1m[35mCREATE  INDEX  "controlleraction_ip_index" ON "impressions"  ("controller_name", "action_name", "ip_address")[0m
+  [1m[35m (161.7ms)[0m  [1m[35mCREATE  INDEX  "controlleraction_request_index" ON "impressions"  ("controller_name", "action_name", "request_hash")[0m
+  [1m[35m (105.6ms)[0m  [1m[35mCREATE  INDEX  "controlleraction_session_index" ON "impressions"  ("controller_name", "action_name", "session_hash")[0m
+  [1m[35m (86.9ms)[0m  [1m[35mCREATE  INDEX  "poly_ip_index" ON "impressions"  ("impressionable_type", "impressionable_id", "ip_address")[0m
+  [1m[35m (89.8ms)[0m  [1m[35mCREATE  INDEX  "poly_params_request_index" ON "impressions"  ("impressionable_type", "impressionable_id", "params")[0m
+  [1m[35m (104.6ms)[0m  [1m[35mCREATE  INDEX  "poly_request_index" ON "impressions"  ("impressionable_type", "impressionable_id", "request_hash")[0m
+  [1m[35m (87.3ms)[0m  [1m[35mCREATE  INDEX  "poly_session_index" ON "impressions"  ("impressionable_type", "impressionable_id", "session_hash")[0m
+  [1m[35m (195.5ms)[0m  [1m[35mCREATE  INDEX  "impressionable_type_message_index" ON "impressions"  ("impressionable_type", "message", "impressionable_id")[0m
+  [1m[35m (90.1ms)[0m  [1m[35mCREATE  INDEX  "index_impressions_on_user_id" ON "impressions"  ("user_id")[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "shots" CASCADE[0m
+  [1m[35m (153.4ms)[0m  [1m[35mCREATE TABLE "shots" ("id" bigserial primary key, "title" character varying, "description" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_shot" character varying)[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (194.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "name" character varying)[0m
+  [1m[35m (96.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (121.5ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "votes" CASCADE[0m
+  [1m[35m (146.9ms)[0m  [1m[35mCREATE TABLE "votes" ("id" bigserial primary key, "votable_type" character varying, "votable_id" integer, "voter_type" character varying, "voter_id" integer, "vote_flag" boolean, "vote_scope" character varying, "vote_weight" integer, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (88.1ms)[0m  [1m[35mCREATE  INDEX  "index_votes_on_votable_id_and_votable_type_and_vote_scope" ON "votes"  ("votable_id", "votable_type", "vote_scope")[0m
+  [1m[35m (88.6ms)[0m  [1m[35mCREATE  INDEX  "index_votes_on_voter_id_and_voter_type_and_vote_scope" ON "votes"  ("voter_id", "voter_type", "vote_scope")[0m
+  [1m[35m (221.8ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (43.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20211105072321)[0m
+  [1m[35m (23.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20211102071631),
+(20211102072822),
+(20211102073153),
+(20211102091637),
+(20211104071535),
+(20211104071741),
+(20211104071809),
+(20211105070542);
+
+[0m
+  [1m[35m (180.5ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-11-06 12:20:01.705863"], ["updated_at", "2021-11-06 12:20:01.705863"]]
+  [1m[35m (27.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[35mDROP TABLE IF EXISTS "comments" CASCADE[0m
+  [1m[35m (151.2ms)[0m  [1m[35mCREATE TABLE "comments" ("id" bigserial primary key, "response" text, "name" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_id" integer, "shot_id" integer)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "impressions" CASCADE[0m
+  [1m[35m (195.3ms)[0m  [1m[35mCREATE TABLE "impressions" ("id" bigserial primary key, "impressionable_type" character varying, "impressionable_id" integer, "user_id" integer, "controller_name" character varying, "action_name" character varying, "view_name" character varying, "request_hash" character varying, "ip_address" character varying, "session_hash" character varying, "message" text, "referrer" text, "params" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (95.6ms)[0m  [1m[35mCREATE  INDEX  "controlleraction_ip_index" ON "impressions"  ("controller_name", "action_name", "ip_address")[0m
+  [1m[35m (103.4ms)[0m  [1m[35mCREATE  INDEX  "controlleraction_request_index" ON "impressions"  ("controller_name", "action_name", "request_hash")[0m
+  [1m[35m (87.6ms)[0m  [1m[35mCREATE  INDEX  "controlleraction_session_index" ON "impressions"  ("controller_name", "action_name", "session_hash")[0m
+  [1m[35m (459.9ms)[0m  [1m[35mCREATE  INDEX  "poly_ip_index" ON "impressions"  ("impressionable_type", "impressionable_id", "ip_address")[0m
+  [1m[35m (122.8ms)[0m  [1m[35mCREATE  INDEX  "poly_params_request_index" ON "impressions"  ("impressionable_type", "impressionable_id", "params")[0m
+  [1m[35m (129.9ms)[0m  [1m[35mCREATE  INDEX  "poly_request_index" ON "impressions"  ("impressionable_type", "impressionable_id", "request_hash")[0m
+  [1m[35m (144.5ms)[0m  [1m[35mCREATE  INDEX  "poly_session_index" ON "impressions"  ("impressionable_type", "impressionable_id", "session_hash")[0m
+  [1m[35m (89.2ms)[0m  [1m[35mCREATE  INDEX  "impressionable_type_message_index" ON "impressions"  ("impressionable_type", "message", "impressionable_id")[0m
+  [1m[35m (105.1ms)[0m  [1m[35mCREATE  INDEX  "index_impressions_on_user_id" ON "impressions"  ("user_id")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "shots" CASCADE[0m
+  [1m[35m (161.9ms)[0m  [1m[35mCREATE TABLE "shots" ("id" bigserial primary key, "title" character varying, "description" text, "user_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "user_shot" character varying)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mDROP TABLE IF EXISTS "users" CASCADE[0m
+  [1m[35m (177.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, "name" character varying)[0m
+  [1m[35m (129.3ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (90.1ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35m (0.5ms)[0m  [1m[35mDROP TABLE IF EXISTS "votes" CASCADE[0m
+  [1m[35m (161.0ms)[0m  [1m[35mCREATE TABLE "votes" ("id" bigserial primary key, "votable_type" character varying, "votable_id" integer, "voter_type" character varying, "voter_id" integer, "vote_flag" boolean, "vote_scope" character varying, "vote_weight" integer, "created_at" timestamp, "updated_at" timestamp)[0m
+  [1m[35m (98.8ms)[0m  [1m[35mCREATE  INDEX  "index_votes_on_votable_id_and_votable_type_and_vote_scope" ON "votes"  ("votable_id", "votable_type", "vote_scope")[0m
+  [1m[35m (94.4ms)[0m  [1m[35mCREATE  INDEX  "index_votes_on_voter_id_and_voter_type_and_vote_scope" ON "votes"  ("voter_id", "voter_type", "vote_scope")[0m
+  [1m[35m (165.5ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (24.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES (20211105072321)[0m
+  [1m[35m (26.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES
+(20211102071631),
+(20211102072822),
+(20211102073153),
+(20211102091637),
+(20211104071535),
+(20211104071741),
+(20211104071809),
+(20211105070542);
+
+[0m
+  [1m[35m (394.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-11-06 12:20:05.068673"], ["updated_at", "2021-11-06 12:20:05.068673"]]
+  [1m[35m (24.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "ar_internal_metadata" SET "value" = $1, "updated_at" = $2 WHERE "ar_internal_metadata"."key" = $3[0m  [["value", "test"], ["updated_at", "2021-11-06 12:20:05.098899"], ["key", "environment"]]
+  [1m[35m (20.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4480840601864039385)[0m
+  [1m[35m (2.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT pg_advisory_unlock(4480840601864039385)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-11-06 14:26:16 +0200
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  Rendered shots/_hero.html.erb (3.0ms)
+  [1m[36mShot Load (1.6ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (88.5ms)
+Completed 200 OK in 2931ms (Views: 2697.7ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/" for ::1 at 2021-11-06 14:53:53 +0200
+
+PG::ConnectionBad - fe_sendauth: no password supplied:
+
+Started POST "/__better_errors/a35f72717148a8bd/variables" for ::1 at 2021-11-06 14:53:53 +0200
+Started POST "/__better_errors/a35f72717148a8bd/variables" for ::1 at 2021-11-06 14:55:35 +0200
+Started POST "/__better_errors/a35f72717148a8bd/variables" for ::1 at 2021-11-06 14:55:36 +0200
+Started POST "/__better_errors/a35f72717148a8bd/variables" for ::1 at 2021-11-06 14:55:37 +0200
+Started GET "/" for ::1 at 2021-11-06 14:57:04 +0200
+
+PG::ConnectionBad - fe_sendauth: no password supplied:
+
+Started POST "/__better_errors/70f40e02a610187a/variables" for ::1 at 2021-11-06 14:57:04 +0200
+Started GET "/" for ::1 at 2021-11-06 15:01:43 +0200
+
+PG::ConnectionBad - FATAL:  Peer authentication failed for user "dribble":
+
+Started POST "/__better_errors/40b9572b3256d068/variables" for ::1 at 2021-11-06 15:01:43 +0200
+Started GET "/" for ::1 at 2021-11-06 15:04:05 +0200
+
+PG::ConnectionBad - FATAL:  Peer authentication failed for user "dribble":
+
+Started POST "/__better_errors/61a8cc6baa0cddb9/variables" for ::1 at 2021-11-06 15:04:06 +0200
+Started GET "/" for ::1 at 2021-11-06 15:04:22 +0200
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ShotsController#index as HTML
+  Rendering shots/index.html.erb within layouts/application
+  Rendered shots/_hero.html.erb (3.0ms)
+  [1m[36mShot Load (1.5ms)[0m  [1m[34mSELECT "shots".* FROM "shots" ORDER BY created_at DESC[0m
+  Rendered shots/index.html.erb within layouts/application (90.5ms)
+Completed 200 OK in 2791ms (Views: 2565.4ms | ActiveRecord: 3.6ms)
+
+
