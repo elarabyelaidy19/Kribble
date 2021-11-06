@@ -1,7 +1,7 @@
 # Kribble
 ## Project Description
 
-This project involves the building of a light weight version of [dribble](https://dribbble.com/) demonstrating the concepts of Authentication and Authorization in ruby on rails, and getting familiar with using the Devise gem in the process and other ruby gems to implement some functionalities as number of views on each shit, like/unlike shits, and using javascript to  and jquery add **Drag and Drop functionality**. 
+This project involves the building of a light weight version of [dribble](https://dribbble.com/) demonstrating the concepts of Authentication and Authorization in ruby on rails, and getting familiar with using the Devise gem in the process and other ruby gems to implement some functionalities as number of views on each shit, like/unlike shits, and using javascript and jquery to add **Drag and Drop functionality**. 
 
 
 A user is able to sign-up and sign-in, create, edit, and delete their shits/comments, view shits/comments made by all users.  A user **can not** edit or delete a shit created by another user also **can not** Unlike other users Likes.
