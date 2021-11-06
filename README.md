@@ -1,67 +1,81 @@
+# Kribble
+
+![Linters](https://github.com/elarabyelaidy19/kribble/workflows/Linters/badge.svg)
+
+## Project Description
+
+This project involves the building of a light weight version of [dribble](https://dribbble.com/) demonstrating the concepts of Authentication and Authorization in ruby on rails and getting familiar with using the Devise gem in the process and be able to use some ruby gems to mimic some functionality as number of view on each shit, like/unlike shits
+
+A user is able to sign-up and sign-in, create, edit, and delete their shits/comments, view shits/comments made by all users.  A user **can not** edit or delete a shit created by another user also **can not** Unlike other users Likes.
+An Unregistered user can only view shits made by all registered users.
+### Screenshot
+
+![](screenshots/twitter_clone.png)
 
 
-# LOG
-* guard init livereload   
-* import "pulma"
-* setup devise   
-    * rails g devise:install 
-    * add alert, notice /layout/application 
-    * rails g controller home 
-    * rails g devise:views
-    * create devise model_devise(user) 
-        * rails g devise User   
-    * create custom controller that extends from devise  
-        * routes >> devise_for :users, controllers: {registrations: 'registrations' }  
-    * params function (update, sign_up) reg_controller 
-    * add name column to user
+## Built With
 
-* craete scaffold Shot(Title, description, user_id)   
-    * rails g scaffold Shot 
-    * routes shots#index 
+- Ruby 2.6.5
+- Ruby on Rails 5.1.7
+- bulm rails (CSS framework) 
+- jquery-rails 
+- Devise gem (for authentication) 
+- Carrierwave (for files uplaod) 
+- Mini-magick (for maniuplate images) 
+- Impressionist (Log views from controller actions or from model) 
+- acts_as_votable (Allowing records to be votable) 
+- 
+## How to run this project on your local machine
 
-* customize views
-    * add nav to application layout  
-    * delete scaffold stylesheet  
-    * update devise views 
-        * password, registrations, sessions 
-    * update application style with pulma 
+### Prerequisites
+1. You should have ruby installed.(This project was tested on version `2.6.5`)
+1. You should have rails installed.(This project was tested on version `5.1.7`)
+1. You should have bundler installed.(This project was tested with Bundler version `2.1.4`)
 
-* Customize shots view 
-    * index, new, edit, _form
+### Steps to follow
+1. Clone the repository to your local machine using `git clone https://github.com/elarabyelaidy19/Kribble.git`
+1. On your local machine, navigate to the folder using `cd kribble` in your terminal
+1. Install all the gems for the project by running `bundle` in your terminal
+1. Migrate the database using this command
+`bin/rake db:migrate`
+1. Start the server by using this command.
+`bin/rails server`
 
-* CarrierWave Uploader 
-    * rails g uploader user_shot(file name) 
-    * setup Carrierwave github  
-        * uncomment carrier::minimagick 
-        * specify image full/thumb  
-        * add mount_uploader to Shot model
-    * add user_shot column to shots 
+1. Open this link in your favorite browser `http://localhost:3000`
 
-* implement drag and drop functionality 
-    * shots.js 
 
-* customize shots views
-    * shots.scss 
-    * application.scss 
+## Live Demo
 
-* create comments  
-    * controller and model 
-    * associatons between User/shots comments  
-    * nested resource for commnets 
-    * view for commnets in shot/show view 
-    * form partial for comments 
-    * Comment partial 
-* imperisont gem for analytics  
-    * rails g impressionist
-    * shot model is_impressionable 
-    * shot controller impressionists 
-    * view 
-* acts as votable 
-    * rails generate acts_as_votable:migration 
-    * shot acts_as_votable 
-    * user acts_as_voter 
-    * controller actions like/unlike 
-    * Authem=nticate user on like/unlike 
-    * index view for like/unlike  
-    * member route for like/unlike 
-    * show view 
+- [twitter_clone](https://dry-cove-96508.herokuapp.com/tweeets)
+
+## Contributions
+
+  There are two ways of contributing to this project:
+
+1.  If you see something wrong or not working, please check [the issue tracker section](https://github.com/RNtaate/twitter_clone/issues), if that problem you met is not in already opened issues then open the issue by clicking on `new issue` button.
+
+2.  If you have a solution to that, and you are willing to work on it, follow the below steps to contribute:
+    1.  Fork this repository
+    1.  Clone it on your local computer by running `git clone git@github.com:RNtaate/twitter_clone.git` __Replace *RNtaate* with the username you use on github__
+    1.  Open the cloned repository which appears as a folder on your local computer with your favorite code editor
+    1.  Create a separate branch off the *master branch*,
+    1.  Write your codes which fix the issue you found
+    1.  Commit and push the branch you created
+    1.  Raise a pull request, comparing your new created branch with our original master branch [here](https://github.com/RNtaate/twitter_clone)
+
+## Authors
+
+👤 **Roy Ntaate**
+
+- Github: [@RNtaate](https://github.com/RNtaate)
+- Twitter: [@RNtaate](https://twitter.com/RNtaate)
+- Linkedin: [roy-ntaate](https://linkedin.com/in/roy-ntaate)
+
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+- This project was originally taken from [the Odin project](https://www.theodinproject.com/courses/ruby-on-rails/lessons/authentication), following the screen cast tutorials of "*__Project 1__*" made by [Andy Leverenz](https://github.com/justalever/twittter)
+- This project was inspired by the [Microverse](https:www.microverse.org) program
