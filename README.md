@@ -10,7 +10,7 @@ A user is able to sign-up and sign-in, create, edit, and delete their shits/comm
 An Unregistered user can only view shits made by all registered users.
 ### Screenshot
 
-![](screenshots/twitter_clone.png)
+![](screens/home.png)
 
 
 ## Built With
@@ -46,7 +46,7 @@ An Unregistered user can only view shits made by all registered users.
 
 ## Live Demo
 
-- [twitter_clone](https://dry-cove-96508.herokuapp.com/tweeets)
+- [kribble](https://kribble.herokuapp.com/)
 
 ## Contributions
 
